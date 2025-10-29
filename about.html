@@ -1,0 +1,650 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Tone4DMedia</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* Consistent with homepage styles */
+    :root {
+      --primary: #6366f1;
+      --primary-dark: #4f46e5;
+      --secondary: #06b6d4;
+      --accent: #f59e0b;
+      --dark: #0f172a;
+      --darker: #020617;
+      --light: #f8fafc;
+      --text: #e2e8f0;
+      --text-muted: #94a3b8;
+      --card-bg: rgba(30, 41, 59, 0.6);
+      --glass: rgba(255, 255, 255, 0.1);
+      --glass-border: rgba(255, 255, 255, 0.2);
+      --shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      --gradient: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+      background: var(--darker);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    /* Header */
+    .site-header {
+      background: rgba(15, 23, 42, 0.95);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--glass-border);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      transition: all 0.3s ease;
+    }
+    
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+    }
+    
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: white;
+      font-weight: 700;
+      font-size: 1.4rem;
+    }
+    
+    .logo img {
+      height: 50px;
+      width: auto;
+    }
+    
+    .brand-name {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    
+    .nav {
+      display: flex;
+      gap: 25px;
+    }
+    
+    .nav a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+      transition: color 0.3s;
+      position: relative;
+      padding: 8px 0;
+    }
+    
+    .nav a:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--gradient);
+      transition: width 0.3s;
+    }
+    
+    .nav a:hover, .nav a.active {
+      color: var(--primary);
+    }
+    
+    .nav a:hover:after, .nav a.active:after {
+      width: 100%;
+    }
+    
+    .mobile-toggle {
+      display: none;
+      background: none;
+      border: none;
+      color: var(--text);
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+    
+    /* Main Content */
+    main.content {
+      padding: 140px 0 80px;
+    }
+    
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: white;
+      text-align: center;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 50%, var(--accent) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .intro {
+      font-size: 1.3rem;
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 60px;
+      color: var(--text-muted);
+    }
+    
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: start;
+    }
+    
+    .info-card {
+      background: var(--card-bg);
+      backdrop-filter: blur(20px);
+      border: 1px solid var(--glass-border);
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: var(--shadow);
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .info-card:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: var(--gradient);
+    }
+    
+    h3 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      color: white;
+      position: relative;
+      padding-bottom: 15px;
+    }
+    
+    h3:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 50px;
+      height: 3px;
+      background: var(--gradient);
+      border-radius: 2px;
+    }
+    
+    .info-card p {
+      margin-bottom: 20px;
+      color: var(--text);
+      line-height: 1.7;
+    }
+    
+    .contact-info {
+      list-style: none;
+    }
+    
+    .contact-info li {
+      margin-bottom: 15px;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+    
+    .contact-info li strong {
+      min-width: 80px;
+      display: inline-block;
+      color: var(--primary);
+    }
+
+    .contact-info li i {
+      color: var(--accent);
+      width: 20px;
+    }
+    
+    /* Values Section */
+    .values-section {
+      margin-top: 100px;
+    }
+    
+    .values-section h2 {
+      text-align: center;
+      margin-bottom: 60px;
+      color: white;
+      font-size: 2.5rem;
+    }
+
+    .values-section h2:after {
+      content: '';
+      display: block;
+      width: 80px;
+      height: 4px;
+      background: var(--gradient);
+      margin: 20px auto 0;
+      border-radius: 2px;
+    }
+    
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+    
+    .value-card {
+      text-align: center;
+      padding: 40px 30px;
+      background: var(--card-bg);
+      backdrop-filter: blur(20px);
+      border: 1px solid var(--glass-border);
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      transition: transform 0.3s, box-shadow 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .value-card:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: var(--gradient);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .value-card:hover:before {
+      opacity: 0.05;
+    }
+    
+    .value-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+    
+    .value-icon {
+      font-size: 3rem;
+      margin-bottom: 25px;
+      color: var(--accent);
+    }
+    
+    .value-card h4 {
+      margin-bottom: 15px;
+      color: white;
+      font-size: 1.4rem;
+    }
+
+    .value-card p {
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+    
+    /* CTA Section */
+    .cta-section {
+      background: linear-gradient(135deg, var(--dark) 0%, var(--darker) 100%);
+      color: white;
+      padding: 80px 0;
+      margin-top: 100px;
+      text-align: center;
+      border-radius: 20px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-section:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at 30% 70%, rgba(99, 102, 241, 0.1) 0%, transparent 50%),
+                  radial-gradient(circle at 70% 30%, rgba(6, 182, 212, 0.1) 0%, transparent 50%);
+    }
+    
+    .cta-section h2 {
+      margin-bottom: 20px;
+      font-size: 2.5rem;
+      position: relative;
+      z-index: 2;
+    }
+    
+    .cta-section p {
+      margin-bottom: 40px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      opacity: 0.9;
+      position: relative;
+      z-index: 2;
+      font-size: 1.2rem;
+    }
+    
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 28px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      z-index: 2;
+    }
+
+    .btn:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.5s;
+    }
+
+    .btn:hover:before {
+      left: 100%;
+    }
+    
+    .btn.primary {
+      background: var(--gradient);
+      color: white;
+      box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+    }
+    
+    .btn.primary:hover {
+      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--secondary) 100%);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(99, 102, 241, 0.6);
+    }
+    
+    .btn.ghost {
+      background-color: transparent;
+      color: white;
+      border: 2px solid var(--glass-border);
+      backdrop-filter: blur(10px);
+      margin-left: 15px;
+    }
+    
+    .btn.ghost:hover {
+      background-color: var(--glass);
+      border-color: var(--primary);
+      transform: translateY(-3px);
+    }
+    
+    /* Footer */
+    .site-footer {
+      background: var(--dark);
+      color: white;
+      padding: 40px 0;
+      margin-top: 80px;
+      border-top: 1px solid var(--glass-border);
+    }
+    
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .social {
+      display: flex;
+      gap: 15px;
+    }
+    
+    .social a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background: var(--card-bg);
+      border-radius: 50%;
+      transition: all 0.3s;
+      border: 1px solid var(--glass-border);
+    }
+
+    .social a:hover {
+      background: var(--gradient);
+      transform: translateY(-3px);
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 992px) {
+      .two-col {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--dark);
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        border-top: 1px solid var(--glass-border);
+      }
+      
+      .nav.active {
+        display: flex;
+      }
+      
+      .mobile-toggle {
+        display: block;
+      }
+      
+      h1 {
+        font-size: 2.5rem;
+      }
+      
+      .footer-inner {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+      }
+      
+      .btn.ghost {
+        margin-left: 0;
+        margin-top: 15px;
+        display: inline-block;
+      }
+
+      .info-card {
+        padding: 30px 25px;
+      }
+
+      .values-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .brand-name {
+        display: none;
+      }
+    }
+
+    /* Animation */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-in {
+      animation: fadeInUp 0.8s ease forwards;
+    }
+  </style>
+</head>
+<body>
+  <!-- same header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        <img src="images/logo.png" alt="Tone4DMedia logo">
+        <span class="brand-name">Tone4DMedia</span>
+      </a>
+      <nav class="nav" id="mainNav">
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="about.html" class="active"><i class="fas fa-info-circle"></i> About</a>
+        <a href="services.html"><i class="fas fa-palette"></i> Services</a>
+        <a href="gallery.html"><i class="fas fa-images"></i> Gallery</a>
+        <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+      </nav>
+      <button id="mobileToggle" class="mobile-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+    </div>
+  </header>
+
+  <main class="container content">
+    <h1 class="fade-in">About Tone4DMedia</h1>
+    <p class="intro fade-in">We are a design & printing company based in Benoni. We deliver logos, signage, banners, vehicle branding, print and digital assets — professionally produced to help your brand stand out.</p>
+
+    <div class="two-col">
+      <div class="info-card fade-in">
+        <h3><i class="fas fa-bullseye"></i> Our Mission</h3>
+        <p>To craft memorable brand experiences that drive action and trust. We combine modern design with skilled printing to give businesses big impact.</p>
+        <p>With years of experience in the industry, we understand what it takes to create designs that not only look great but also communicate your brand's message effectively.</p>
+        <p>We believe in the power of visual storytelling to transform businesses and create lasting impressions.</p>
+      </div>
+      <div class="info-card fade-in">
+        <h3><i class="fas fa-address-card"></i> Contact Details</h3>
+        <ul class="contact-info">
+          <li><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> 892 Singh Street, Actonville; 11 Bunyan Street, Benoni; 108 Quintus Van Der Walt, Norkem Park</li>
+          <li><i class="fas fa-phone"></i> <strong>Phone:</strong> 076 484 7360</li>
+          <li><i class="fas fa-envelope"></i> <strong>Email:</strong> tone4dmedia@gmail.com</li>
+          <li><i class="fas fa-clock"></i> <strong>Hours:</strong> Mon-Fri: 8am-5pm, Sat: 9am-1pm</li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="values-section">
+      <h2>Our Values</h2>
+      <div class="values-grid">
+        <div class="value-card fade-in">
+          <div class="value-icon">✏️</div>
+          <h4>Creative Excellence</h4>
+          <p>We push creative boundaries to deliver designs that captivate and inspire your audience with innovative solutions.</p>
+        </div>
+        <div class="value-card fade-in">
+          <div class="value-icon">⚡</div>
+          <h4>Fast Turnaround</h4>
+          <p>We respect your time and deliver quality work within agreed timelines without compromising on quality.</p>
+        </div>
+        <div class="value-card fade-in">
+          <div class="value-icon">🤝</div>
+          <h4>Client Partnership</h4>
+          <p>We work collaboratively with you to bring your vision to life, ensuring your satisfaction at every step.</p>
+        </div>
+        <div class="value-card fade-in">
+          <div class="value-icon">🎯</div>
+          <h4>Quality Assurance</h4>
+          <p>Every project undergoes rigorous quality checks before delivery to ensure perfection in every detail.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <h2>Ready to Elevate Your Brand?</h2>
+      <p>Let's work together to create designs and prints that make your business stand out from the competition.</p>
+      <a class="btn primary" href="contact.html"><i class="fas fa-quote-left"></i> Get a Quote</a>
+      <a class="btn ghost" href="gallery.html"><i class="fas fa-images"></i> View Our Work</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="yearAbout"></span> Tone4DMedia</div>
+      <div class="social">
+        <a href="https://www.facebook.com/share/1Ea1pMmF7w/" target="_blank" rel="noopener" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/tone4dmedia?igsh=cDgxM3NrYTZvNnBp" target="_blank" rel="noopener" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com/@toned81?_t=ZS-90xP6tw8uAy&_r=1" target="_blank" rel="noopener" aria-label="TikTok">
+          <i class="fab fa-tiktok"></i>
+        </a>
+        <a href="https://wa.me/27692403008" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    document.getElementById('mobileToggle').addEventListener('click', function() {
+      document.getElementById('mainNav').classList.toggle('active');
+    });
+    
+    // Set current year in footer
+    document.getElementById('yearAbout').textContent = new Date().getFullYear();
+
+    // Header scroll effect
+    window.addEventListener('scroll', function() {
+      const header = document.querySelector('.site-header');
+      if (window.scrollY > 100) {
+        header.style.background = 'rgba(15, 23, 42, 0.98)';
+      } else {
+        header.style.background = 'rgba(15, 23, 42, 0.95)';
+      }
+    });
+
+    // Intersection Observer for animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-in').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>

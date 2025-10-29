@@ -1,0 +1,801 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Tone4DMedia</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* Consistent with other pages */
+    :root {
+      --primary: #6366f1;
+      --primary-dark: #4f46e5;
+      --secondary: #06b6d4;
+      --accent: #f59e0b;
+      --dark: #0f172a;
+      --darker: #020617;
+      --light: #f8fafc;
+      --text: #e2e8f0;
+      --text-muted: #94a3b8;
+      --card-bg: rgba(30, 41, 59, 0.6);
+      --glass: rgba(255, 255, 255, 0.1);
+      --glass-border: rgba(255, 255, 255, 0.2);
+      --shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      --gradient: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+      background: var(--darker);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    /* Header */
+    .site-header {
+      background: rgba(15, 23, 42, 0.95);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--glass-border);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      transition: all 0.3s ease;
+    }
+    
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+    }
+    
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: white;
+      font-weight: 700;
+      font-size: 1.4rem;
+    }
+    
+    .logo img {
+      height: 50px;
+      width: auto;
+    }
+    
+    .brand-name {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    
+    .nav {
+      display: flex;
+      gap: 25px;
+    }
+    
+    .nav a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+      transition: color 0.3s;
+      position: relative;
+      padding: 8px 0;
+    }
+    
+    .nav a:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--gradient);
+      transition: width 0.3s;
+    }
+    
+    .nav a:hover, .nav a.active {
+      color: var(--primary);
+    }
+    
+    .nav a:hover:after, .nav a.active:after {
+      width: 100%;
+    }
+    
+    .mobile-toggle {
+      display: none;
+      background: none;
+      border: none;
+      color: var(--text);
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+    
+    /* Main Content */
+    main.content {
+      padding: 140px 0 80px;
+    }
+    
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: white;
+      text-align: center;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 50%, var(--accent) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .page-intro {
+      font-size: 1.3rem;
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 60px;
+      color: var(--text-muted);
+    }
+    
+    /* Two Column Layout */
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: start;
+    }
+    
+    /* Contact Form */
+    .contact-form {
+      background: var(--card-bg);
+      backdrop-filter: blur(20px);
+      border: 1px solid var(--glass-border);
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .contact-form:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: var(--gradient);
+    }
+    
+    .form-group {
+      margin-bottom: 25px;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: 600;
+      color: white;
+    }
+    
+    input, textarea {
+      width: 100%;
+      padding: 14px 16px;
+      background: rgba(15, 23, 42, 0.6);
+      border: 1px solid var(--glass-border);
+      border-radius: 10px;
+      font-family: inherit;
+      font-size: 1rem;
+      transition: all 0.3s;
+      color: var(--text);
+    }
+    
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+      background: rgba(15, 23, 42, 0.8);
+    }
+    
+    textarea {
+      resize: vertical;
+      min-height: 140px;
+    }
+    
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 28px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s;
+      text-align: center;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.5s;
+    }
+
+    .btn:hover:before {
+      left: 100%;
+    }
+    
+    .btn.primary {
+      background: var(--gradient);
+      color: white;
+      box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+    }
+    
+    .btn.primary:hover {
+      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--secondary) 100%);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(99, 102, 241, 0.6);
+    }
+    
+    .form-status {
+      margin-top: 20px;
+      padding: 16px;
+      border-radius: 10px;
+      text-align: center;
+      display: none;
+      font-weight: 600;
+    }
+    
+    .form-status.success {
+      background: rgba(34, 197, 94, 0.1);
+      color: #4ade80;
+      border: 1px solid rgba(34, 197, 94, 0.3);
+      display: block;
+    }
+    
+    .form-status.error {
+      background: rgba(239, 68, 68, 0.1);
+      color: #f87171;
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      display: block;
+    }
+    
+    /* Contact Info */
+    .contact-info {
+      background: var(--card-bg);
+      backdrop-filter: blur(20px);
+      border: 1px solid var(--glass-border);
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: var(--shadow);
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .contact-info:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: var(--gradient);
+    }
+    
+    .contact-info h3 {
+      font-size: 1.8rem;
+      margin-bottom: 30px;
+      color: white;
+      position: relative;
+      padding-bottom: 15px;
+    }
+    
+    .contact-info h3:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 50px;
+      height: 3px;
+      background: var(--gradient);
+      border-radius: 2px;
+    }
+    
+    .contact-details {
+      list-style: none;
+      margin-bottom: 30px;
+    }
+    
+    .contact-details li {
+      margin-bottom: 25px;
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+    }
+    
+    .contact-icon {
+      width: 50px;
+      height: 50px;
+      background: rgba(99, 102, 241, 0.1);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary);
+      flex-shrink: 0;
+      font-size: 1.2rem;
+    }
+    
+    .contact-text h4 {
+      margin-bottom: 8px;
+      color: white;
+      font-size: 1.1rem;
+    }
+    
+    .contact-text p {
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .contact-text a {
+      color: var(--primary);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .contact-text a:hover {
+      color: var(--accent);
+    }
+    
+    /* Map Section */
+    .map-section {
+      margin-top: 80px;
+    }
+
+    .map-section h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: white;
+      font-size: 2.5rem;
+    }
+
+    .map-section h2:after {
+      content: '';
+      display: block;
+      width: 80px;
+      height: 4px;
+      background: var(--gradient);
+      margin: 20px auto 0;
+      border-radius: 2px;
+    }
+
+    .map-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      align-items: stretch;
+    }
+
+    .map-item {
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      background: var(--card-bg);
+      border: 1px solid var(--glass-border);
+      transition: transform 0.3s;
+    }
+
+    .map-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .map-item iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+      display: block;
+    }
+
+    .map-caption {
+      padding: 15px;
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    @media (max-width: 768px) {
+      .map-grid { grid-template-columns: 1fr; }
+      .map-item iframe { height: 250px; }
+    }
+    
+    /* Business Hours */
+    .hours-section {
+      margin-top: 40px;
+    }
+    
+    .hours-section h3 {
+      margin-bottom: 20px;
+      color: white;
+      font-size: 1.3rem;
+    }
+    
+    .hours-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    .hours-table tr {
+      border-bottom: 1px solid var(--glass-border);
+    }
+    
+    .hours-table tr:last-child {
+      border-bottom: none;
+    }
+    
+    .hours-table td {
+      padding: 12px 0;
+    }
+    
+    .hours-table td:first-child {
+      font-weight: 600;
+      color: white;
+    }
+    
+    .hours-table td:last-child {
+      text-align: right;
+      color: var(--text-muted);
+    }
+    
+    /* Footer */
+    .site-footer {
+      background: var(--dark);
+      color: white;
+      padding: 40px 0;
+      margin-top: 80px;
+      border-top: 1px solid var(--glass-border);
+    }
+    
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .social {
+      display: flex;
+      gap: 15px;
+    }
+    
+    .social a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background: var(--card-bg);
+      border-radius: 50%;
+      transition: all 0.3s;
+      border: 1px solid var(--glass-border);
+    }
+
+    .social a:hover {
+      background: var(--gradient);
+      transform: translateY(-3px);
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 992px) {
+      .two-col {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--dark);
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        border-top: 1px solid var(--glass-border);
+      }
+      
+      .nav.active {
+        display: flex;
+      }
+      
+      .mobile-toggle {
+        display: block;
+      }
+      
+      h1 {
+        font-size: 2.5rem;
+      }
+      
+      .contact-form, .contact-info {
+        padding: 30px 25px;
+      }
+      
+      .footer-inner {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+      }
+      
+      .brand-name {
+        display: none;
+      }
+    }
+
+    /* Animation */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-in {
+      animation: fadeInUp 0.8s ease forwards;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        <img src="images/logo.png" alt="Tone4DMedia logo">
+        <span class="brand-name">Tone4DMedia</span>
+      </a>
+      <nav class="nav" id="mainNav">
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+        <a href="services.html"><i class="fas fa-palette"></i> Services</a>
+        <a href="gallery.html"><i class="fas fa-images"></i> Gallery</a>
+        <a href="contact.html" class="active"><i class="fas fa-envelope"></i> Contact</a>
+      </nav>
+      <button id="mobileToggle" class="mobile-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+    </div>
+  </header>
+
+  <main class="container content">
+    <h1 class="fade-in">Contact Us</h1>
+    <p class="page-intro fade-in">Get in touch with us for quotes, consultations, or any questions about our services. We're here to help bring your ideas to life.</p>
+
+    <div class="two-col">
+      <div>
+        <form id="contactForm" class="contact-form fade-in">
+          <div class="form-group">
+            <label for="name"><i class="fas fa-user"></i> Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your full name" />
+          </div>
+          
+          <div class="form-group">
+            <label for="email"><i class="fas fa-envelope"></i> Email</label>
+            <input type="email" id="email" name="email" required placeholder="your.email@example.com" />
+          </div>
+          
+          <div class="form-group">
+            <label for="phone"><i class="fas fa-phone"></i> Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your phone number" />
+          </div>
+          
+          <div class="form-group">
+            <label for="message"><i class="fas fa-comment"></i> Message</label>
+            <textarea id="message" name="message" required placeholder="Tell us about your project..."></textarea>
+          </div>
+          
+          <button class="btn primary" type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+          <div id="formStatus" class="form-status" aria-live="polite"></div>
+        </form>
+      </div>
+
+      <div class="contact-info fade-in">
+        <h3><i class="fas fa-map-marker-alt"></i> Visit Us / Call</h3>
+        <ul class="contact-details">
+          <li>
+            <div class="contact-icon">📍</div>
+            <div class="contact-text">
+              <h4>Our Locations</h4>
+              <p>892 Singh Street, Actonville, Benoni 1506<br>
+                 11 Bunyan Street, Benoni 1501<br>
+                 108 Quintus Van Der Walt, Norkem Park</p>
+            </div>
+          </li>
+          <li>
+            <div class="contact-icon">📞</div>
+            <div class="contact-text">
+              <h4>Phone</h4>
+              <p>
+                <a href="tel:+27692403008"><i class="fas fa-phone"></i> +27 69 240 3008</a><br>
+                <a href="tel:+27764847360"><i class="fas fa-phone"></i> 076 484 7360</a>
+              </p>
+              <p style="margin-top:12px;">
+                <a id="whatsappLink" href="https://wa.me/27692403008" target="_blank" rel="noopener" data-phone="27692403008" class="btn" style="background: var(--gradient); color: white; padding: 8px 16px; border-radius: 8px; text-decoration: none; font-size: 0.9rem;">
+                  <i class="fab fa-whatsapp"></i> Message us on WhatsApp
+                </a>
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="contact-icon">✉️</div>
+            <div class="contact-text">
+              <h4>Email</h4>
+              <p><a href="mailto:tone4dmedia@gmail.com">tone4dmedia@gmail.com</a></p>
+            </div>
+          </li>
+        </ul>
+        
+        <div class="hours-section">
+          <h3><i class="fas fa-clock"></i> Business Hours</h3>
+          <table class="hours-table">
+            <tr>
+              <td>Monday - Friday</td>
+              <td>8:00 AM - 5:00 PM</td>
+            </tr>
+            <tr>
+              <td>Saturday</td>
+              <td>9:00 AM - 1:00 PM</td>
+            </tr>
+            <tr>
+              <td>Sunday</td>
+              <td>Closed</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <section class="map-section">
+      <h2>Find Us</h2>
+      <div class="map-grid">
+        <div class="map-item fade-in">
+          <iframe loading="lazy" allowfullscreen
+            src="https://www.google.com/maps?q=892%20Singh%20Street%2C%20Actonville%2C%20Benoni%201506&output=embed"
+            title="Map: 892 Singh Street, Actonville, Benoni 1506"></iframe>
+          <div class="map-caption">892 Singh Street, Actonville</div>
+        </div>
+        <div class="map-item fade-in">
+          <iframe loading="lazy" allowfullscreen
+            src="https://www.google.com/maps?q=11%20Bunyan%20Street%2C%20Benoni%201501&output=embed"
+            title="Map: 11 Bunyan Street, Benoni 1501"></iframe>
+          <div class="map-caption">11 Bunyan Street, Benoni</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="yearContact"></span> Tone4DMedia</div>
+      <div class="social">
+        <a href="https://www.facebook.com/share/1Ea1pMmF7w/" target="_blank" rel="noopener" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/tone4dmedia?igsh=cDgxM3NrYTZvNnBp" target="_blank" rel="noopener" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com/@toned81?_t=ZS-90xP6tw8uAy&_r=1" target="_blank" rel="noopener" aria-label="TikTok">
+          <i class="fab fa-tiktok"></i>
+        </a>
+        <a href="https://wa.me/27692403008" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    document.getElementById('mobileToggle').addEventListener('click', function() {
+      document.getElementById('mainNav').classList.toggle('active');
+    });
+    
+    // Set current year in footer
+    document.getElementById('yearContact').textContent = new Date().getFullYear();
+
+    // Header scroll effect
+    window.addEventListener('scroll', function() {
+      const header = document.querySelector('.site-header');
+      if (window.scrollY > 100) {
+        header.style.background = 'rgba(15, 23, 42, 0.98)';
+      } else {
+        header.style.background = 'rgba(15, 23, 42, 0.95)';
+      }
+    });
+    
+    // Contact form handling
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const formStatus = document.getElementById('formStatus');
+      const formData = new FormData(this);
+      
+      // Simulate form submission
+      formStatus.className = 'form-status';
+      formStatus.textContent = 'Sending your message...';
+      formStatus.style.display = 'block';
+      
+      setTimeout(() => {
+        // In a real implementation, you would send the data to a server here
+        formStatus.className = 'form-status success';
+        formStatus.innerHTML = '<i class="fas fa-check-circle"></i> Thank you! Your message has been sent successfully. We will get back to you soon.';
+        document.getElementById('contactForm').reset();
+      }, 1500);
+    });
+
+    // Open WhatsApp Web on desktop, wa.me on mobile
+    (function() {
+      var wa = document.getElementById('whatsappLink');
+      if (!wa) return;
+      wa.addEventListener('click', function(evt) {
+        try {
+          var phone = wa.dataset.phone || '27692403008';
+          // crude mobile detection — good enough for deciding whatsapp web vs app
+          var isMobile = /Mobi|Android|iPhone|iPad|iPod|Windows Phone/i.test(navigator.userAgent || '');
+          if (!isMobile) {
+            // desktop — open WhatsApp Web
+            evt.preventDefault();
+            var url = 'https://web.whatsapp.com/send?phone=' + encodeURIComponent(phone);
+            window.open(url, '_blank', 'noopener');
+          }
+          // on mobile, allow default wa.me behavior (opens app or web)
+        } catch (err) {
+          // if anything goes wrong, let the link behave normally
+          return;
+        }
+      });
+    })();
+
+    // Intersection Observer for animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-in').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>

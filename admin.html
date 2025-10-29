@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Gallery Metadata Admin — Tone4DMedia</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      body { padding: 28px; }
+      .admin-header { display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom:18px; }
+      .admin-actions { display:flex; gap:8px; align-items:center; }
+      .entries { display:flex; flex-direction:column; gap:12px; margin-top:18px; }
+      .entry { background: #fff; color:#111; padding:12px; border-radius:8px; display:flex; gap:8px; align-items:flex-start; }
+      .entry > div { flex:1; }
+      .entry label { font-size:12px; color:#333; display:block; margin-bottom:6px; }
+      .entry input { width:100%; padding:8px; border-radius:6px; border:1px solid #ddd; }
+      .entry .small { font-size:12px; color:#666; margin-top:6px; }
+      .entry-controls { display:flex; flex-direction:column; gap:8px; }
+      .btn-small { padding:8px 10px; border-radius:6px; cursor:pointer; }
+      .hint { color:#9aa3ab; font-size:13px; }
+      .top-note { max-width:900px; }
+      pre.json-preview { background:#0b1115; color:#fff; padding:12px; border-radius:8px; overflow:auto; max-height:300px; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="admin-header">
+        <div>
+          <h1>Gallery Metadata Admin</h1>
+          <div class="top-note hint">Load, edit and export <code>gallery/metadata.json</code>. No server required — download the edited JSON and replace the file in the repo.</div>
+        </div>
+        <div class="admin-actions">
+          <button id="btnLoad" class="btn btn.ghost">Reload</button>
+          <button id="btnAdd" class="btn btn.primary">Add Entry</button>
+          <button id="btnExport" class="btn">Download JSON</button>
+          <button id="btnCopy" class="btn btn.ghost">Copy JSON</button>
+        </div>
+      </div>
+
+      <div id="status" class="hint">Status: idle</div>
+
+      <div id="entries" class="entries"></div>
+
+      <h3>Preview JSON</h3>
+      <pre id="preview" class="json-preview">[]</pre>
+
+      <hr style="margin-top:24px;margin-bottom:24px;">
+      <div class="hint">Notes: If loading fails when you open this file using file:// protocol, run a local static server (for example: <code>python -m http.server</code>) from the project root and open <code>http://localhost:8000/admin.html</code>.</div>
+    </div>
+
+    <script>
+      const entriesEl = document.getElementById('entries');
+      const statusEl = document.getElementById('status');
+      const previewEl = document.getElementById('preview');
+
+      function setStatus(s) { statusEl.textContent = 'Status: ' + s; }
+
+      // Render entries array into editable UI
+      function render(items) {
+        entriesEl.innerHTML = '';
+        items.forEach((it, idx) => {
+          const entry = document.createElement('div');
+          entry.className = 'entry';
+
+          entry.innerHTML = `
+            <div>
+              <label>id</label>
+              <input type="number" class="fld-id" value="${it.id || ''}">
+            </div>
+            <div>
+              <label>src (relative)</label>
+              <input type="text" class="fld-src" value="${it.src || ''}">
+            </div>
+            <div>
+              <label>title</label>
+              <input type="text" class="fld-title" value="${(it.title||'').replace(/"/g,'&quot;')}">
+            </div>
+            <div>
+              <label>alt</label>
+              <input type="text" class="fld-alt" value="${(it.alt||'').replace(/"/g,'&quot;')}">
+            </div>
+            <div>
+              <label>category</label>
+              <input type="text" class="fld-cat" value="${it.category || ''}">
+            </div>
+            <div class="entry-controls">
+              <button class="btn-small" data-action="up">▲</button>
+              <button class="btn-small" data-action="down">▼</button>
+              <button class="btn-small" data-action="remove">Remove</button>
+            </div>
+          `;
+
+          // controls
+          entry.querySelector('[data-action="remove"]').addEventListener('click', () => {
+            items.splice(idx, 1);
+            refresh(items);
+          });
+
+          entry.querySelector('[data-action="up"]').addEventListener('click', () => {
+            if (idx === 0) return;
+            const tmp = items[idx-1]; items[idx-1] = items[idx]; items[idx] = tmp;
+            refresh(items);
+          });
+
+          entry.querySelector('[data-action="down"]').addEventListener('click', () => {
+            if (idx === items.length - 1) return;
+            const tmp = items[idx+1]; items[idx+1] = items[idx]; items[idx] = tmp;
+            refresh(items);
+          });
+
+          // update model on input change
+          ['fld-id','fld-src','fld-title','fld-alt','fld-cat'].forEach(cls => {
+            const el = entry.querySelector('.' + cls);
+            el.addEventListener('input', () => {
+              const ids = entry.querySelector('.fld-id').value;
+              items[idx].id = ids ? Number(ids) : '';
+              items[idx].src = entry.querySelector('.fld-src').value;
+              items[idx].title = entry.querySelector('.fld-title').value;
+              items[idx].alt = entry.querySelector('.fld-alt').value;
+              items[idx].category = entry.querySelector('.fld-cat').value;
+              updatePreview(items);
+            });
+          });
+
+          entriesEl.appendChild(entry);
+        });
+        updatePreview(items);
+      }
+
+      function updatePreview(items) {
+        previewEl.textContent = JSON.stringify(items, null, 2);
+      }
+
+      function refresh(items) { render(items); setStatus('Edited'); }
+
+      // Export / Download
+      function downloadJSON(items) {
+        const blob = new Blob([JSON.stringify(items, null, 2)], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'metadata.json';
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        URL.revokeObjectURL(url);
+        setStatus('Downloaded metadata.json');
+      }
+
+      // Copy to clipboard
+      async function copyToClipboard(items) {
+        try {
+          await navigator.clipboard.writeText(JSON.stringify(items, null, 2));
+          setStatus('Copied JSON to clipboard');
+        } catch (err) {
+          setStatus('Clipboard copy failed — browser may block it.');
+        }
+      }
+
+      // Initial load
+      let items = [];
+      function loadMetadata() {
+        setStatus('Loading metadata.json...');
+        fetch('gallery/metadata.json')
+          .then(res => {
+            if (!res.ok) throw new Error('Not found');
+            return res.json();
+          })
+          .then(json => {
+            items = Array.isArray(json) ? json : [];
+            if (items.length === 0) setStatus('metadata.json loaded but empty'); else setStatus('Loaded ' + items.length + ' entries');
+            render(items);
+          })
+          .catch(err => {
+            setStatus('Could not load metadata.json from file (use Download after editing).');
+            // start with sample items if fetch failed
+            items = [];
+            render(items);
+          });
+      }
+
+      document.getElementById('btnLoad').addEventListener('click', () => loadMetadata());
+      document.getElementById('btnAdd').addEventListener('click', () => {
+        const nextId = items.length ? (Math.max(...items.map(i => Number(i.id||0))) + 1) : 1;
+        items.push({ id: nextId, src: `gallery/image${nextId}.jpg`, title: `Project ${nextId}`, category: '', alt: '' });
+        refresh(items);
+      });
+      document.getElementById('btnExport').addEventListener('click', () => downloadJSON(items));
+      document.getElementById('btnCopy').addEventListener('click', () => copyToClipboard(items));
+
+      // load on open
+      loadMetadata();
+    </script>
+  </body>
+</html>

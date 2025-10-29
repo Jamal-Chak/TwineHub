@@ -1,0 +1,16 @@
+[
+  { "id": 1, "src": "gallery/image1.jpg", "title": "Signature Corporate Identity — Clean logo & luxe stationery", "category": "graphic-design", "alt": "clean corporate identity with logo, embossed business cards and branded stationery" },
+  { "id": 2, "src": "gallery/image2.jpg", "title": "Bold Shopfront Makeover — Illuminated exterior sign", "category": "signage", "alt": "bold illuminated shopfront sign with branded typography" },
+  { "id": 3, "src": "gallery/image3.jpg", "title": "Team Spirit Tee — Vibrant screen-printed crew shirts", "category": "tshirts", "alt": "vibrant screen-printed team t-shirts with logo" },
+  { "id": 4, "src": "gallery/image4.jpg", "title": "Mobile Billboard — Dynamic full vehicle wrap", "category": "vehicle", "alt": "bright full-vehicle wrap with eye-catching graphics" },
+  { "id": 5, "src": "gallery/image5.jpg", "title": "Event Spotlight Banner — Large-format display", "category": "banners", "alt": "large weatherproof event banner with bold artwork" },
+  { "id": 6, "src": "gallery/image6.jpg", "title": "Minimal Mark — Modern logo exploration", "category": "graphic-design", "alt": "minimal modern logo concept for a contemporary brand" },
+  { "id": 7, "src": "gallery/image7.jpg", "title": "Wayfinding Set — Clear directional signage", "category": "signage", "alt": "directional wayfinding signs designed for clarity and visibility" },
+  { "id": 8, "src": "gallery/image8.jpg", "title": "Promo Tee — Soft cotton branded shirts", "category": "tshirts", "alt": "soft cotton promotional t-shirts with subtle branding" },
+  { "id": 9, "src": "gallery/image9.jpg", "title": "Branded Work Van — Professional vehicle decals", "category": "vehicle", "alt": "business van with professional decals and contact details" },
+  { "id": 10, "src": "gallery/image10.jpg", "title": "In-Store Promo Banner — Point-of-sale artwork", "category": "banners", "alt": "retail point-of-sale banner designed to attract customers" },
+  { "id": 11, "src": "gallery/image11.jpg", "title": "Polished Stationery Suite — Cards & letterhead", "category": "graphic-design", "alt": "polished stationery set including business cards and letterheads" },
+  { "id": 12, "src": "gallery/image12.jpg", "title": "Window Display Graphics — Brand-forward treatment", "category": "signage", "alt": "custom window graphics and perforated vinyl display" },
+  { "id": 13, "src": "gallery/image13.jpg", "title": "Event Crew Uniforms — Durable branded apparel", "category": "tshirts", "alt": "durable event crew uniforms with logo embroidery" },
+  { "id": 14, "src": "gallery/image14.jpg", "title": "Fleet Identity Rollout — Consistent multi-vehicle branding", "category": "vehicle", "alt": "cohesive branding across multiple fleet vehicles" }
+]
