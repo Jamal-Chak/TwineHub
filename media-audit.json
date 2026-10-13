@@ -295,5 +295,355 @@
       1369
     ],
     "exif_fields": 0
+  },
+  {
+    "source": "images/Banners/IMG_20250510_095659.jpg",
+    "output": "assets/images/banners-img-20250510-095659.jpg",
+    "source_sha256": "6484094e04c3bfcf87a19bdd5ed9e2ae4fa7caab85d0a7c9e7d349ce410182dc",
+    "output_sha256": "0379a5d5669e63aeb682a4ebd0bc7e787851622508d9dfd3e623706ebbf367ba",
+    "source_bytes": 1072856,
+    "output_bytes": 120045,
+    "dimensions": [
+      720,
+      1600
+    ],
+    "exif_fields": 0,
+    "optimization": "EXIF orientation corrected; longest edge at most 1600px; RGB JPEG quality 72, progressive and optimized, EXIF stripped."
+  },
+  {
+    "source": "images/Banners/IMG_20250709_115440.jpg",
+    "output": "assets/images/banners-img-20250709-115440.jpg",
+    "source_sha256": "f42c04b735f4ecf251b860807207acd1e7918e135460459f8251f0ee043bd286",
+    "output_sha256": "fab1a8a1b0e5b9ea6a7800e2045346d1d9ed96bb015c3c1f98f831df94bf9eea",
+    "source_bytes": 1705481,
+    "output_bytes": 175856,
+    "dimensions": [
+      1600,
+      720
+    ],
+    "exif_fields": 0,
+    "optimization": "EXIF orientation corrected; longest edge at most 1600px; RGB JPEG quality 72, progressive and optimized, EXIF stripped."
+  },
+  {
+    "source": "images/Banners/IMG_20251223_194243.jpg",
+    "output": "assets/images/banners-img-20251223-194243.jpg",
+    "source_sha256": "9aef4acb590af8b9b9accc43758649c48db1187f8675ccdfec3e3e846c81856b",
+    "output_sha256": "a2c5eac1d50b127ee74f67081bff65e36d3d21363fbae4843045711920e01c99",
+    "source_bytes": 1177912,
+    "output_bytes": 101463,
+    "dimensions": [
+      720,
+      1600
+    ],
+    "exif_fields": 0,
+    "optimization": "EXIF orientation corrected; longest edge at most 1600px; RGB JPEG quality 72, progressive and optimized, EXIF stripped."
+  },
+  {
+    "source": "images/Banners/IMG_20260114_103248.jpg",
+    "output": "assets/images/banners-img-20260114-103248.jpg",
+    "source_sha256": "8e451fae14d2137d15af4effed887151284e13cd8f590ce2898a454a2730f830",
+    "output_sha256": "975c3c5e2f9818baa8b442ee6be0f17101b98ec28a42c51ab6d7cdae9fa3869b",
+    "source_bytes": 2037478,
+    "output_bytes": 182593,
+    "dimensions": [
+      720,
+      1600
+    ],
+    "exif_fields": 0,
+    "optimization": "EXIF orientation corrected; longest edge at most 1600px; RGB JPEG quality 72, progressive and optimized, EXIF stripped."
+  },
+  {
+    "source": "images/Banners/IMG_20260320_130252.jpg",
+    "output": "assets/images/banners-img-20260320-130252.jpg",
+    "source_sha256": "7db5c85e226adf2ef6d9f38f764b597f5f910c671ca1649395b4a44cd88b3e57",
+    "output_sha256": "422431d020cecb8f1ba157241c3c60616e6c908946e6a0583ef45c20fe023fc0",
+    "source_bytes": 967421,
+    "output_bytes": 131301,
+    "dimensions": [
+      720,
+      1600
+    ],
+    "exif_fields": 0,
+    "optimization": "EXIF orientation corrected; longest edge at most 1600px; RGB JPEG quality 72, progressive and optimized, EXIF stripped."
+  },
+  {
+    "source": "images/Banners/IMG_20260521_205638.jpg",
+    "output": "assets/images/banners-img-20260521-205638.jpg",
+    "source_sha256": "dcfdc3d12e836cb84b9f905be9f50a7698e4f3127f0557520a98453577ce173d",
+    "output_sha256": "0288bbb04c35ab96688ff0d56bd9d4306f6d7907decfb93b188e5f93fe417f11",
+    "source_bytes": 1747325,
+    "output_bytes": 173632,
+    "dimensions": [
+      1200,
+      1600
+    ],
+    "exif_fields": 0,
+    "optimization": "EXIF orientation corrected; longest edge at most 1600px; RGB JPEG quality 72, progressive and optimized, EXIF stripped."
+  },
+  {
+    "source": "images/Banners/IMG_20260707_234004.jpg",
+    "output": "assets/images/banners-img-20260707-234004.jpg",
+    "source_sha256": "07c4c0b48896cb35f0baf938f09f56aff8dc5cf7c2c7544c4c159e7621334801",
+    "output_sha256": "1038bf4bea9583e8196ee30840fb12a3d110b1e0f55562903de1b5e946fd95cf",
+    "source_bytes": 1523606,
+    "output_bytes": 127108,
+    "dimensions": [
+      1200,
+      1600
+    ],
+    "exif_fields": 0,
+    "optimization": "EXIF orientation corrected; longest edge at most 1600px; RGB JPEG quality 72, progressive and optimized, EXIF stripped."
+  },
+  {
+    "source": "images/Shop branding and Signage/IMG_20260703_121650.jpg",
+    "output": "assets/images/shop-branding-and-signage-img-20260703-121650.jpg",
+    "source_sha256": "bec2470bc6ba284bc9bb7f2eed4dcbe651cf61940d75311db502747c144e183b",
+    "output_sha256": "665c89c9064bb0652cadbe3cb52778bc72c7ac8cab63250ae6d2c487b46ce839",
+    "source_bytes": 2198212,
+    "output_bytes": 242738,
+    "dimensions": [
+      1200,
+      1600
+    ],
+    "exif_fields": 0,
+    "optimization": "EXIF orientation corrected; longest edge at most 1600px; RGB JPEG quality 72, progressive and optimized, EXIF stripped."
+  },
+  {
+    "source": "images/Shop branding and Signage/IMG_20260703_135206.jpg",
+    "output": "assets/images/shop-branding-and-signage-img-20260703-135206.jpg",
+    "source_sha256": "01bc0453c5f42af172ee596c4fd8f2e7a5f36619100157b9db881217832ba457",
+    "output_sha256": "700356650f665378ffc0ec20406c5ba8e1bb083453d31ce3cd108e04eff94fc8",
+    "source_bytes": 2644783,
+    "output_bytes": 317285,
+    "dimensions": [
+      1600,
+      1200
+    ],
+    "exif_fields": 0,
+    "optimization": "EXIF orientation corrected; longest edge at most 1600px; RGB JPEG quality 72, progressive and optimized, EXIF stripped."
+  },
+  {
+    "source": "images/Shop branding and Signage/IMG_20260910_100440.jpg",
+    "output": "assets/images/shop-branding-and-signage-img-20260910-100440.jpg",
+    "source_sha256": "8f042b50015bd41f50980831e4eadbe9c33a5654dade3173b009e6911279a1e3",
+    "output_sha256": "3c316dcac9f969c5936b7eb721eb40d9aa6e31f96c473154e12c08a61f3fdde4",
+    "source_bytes": 2171671,
+    "output_bytes": 222464,
+    "dimensions": [
+      1200,
+      1600
+    ],
+    "exif_fields": 0,
+    "optimization": "EXIF orientation corrected; longest edge at most 1600px; RGB JPEG quality 72, progressive and optimized, EXIF stripped."
+  },
+  {
+    "source": "images/Shop branding and Signage/IMG_20260911_131413.jpg",
+    "output": "assets/images/shop-branding-and-signage-img-20260911-131413.jpg",
+    "source_sha256": "bd204d5006e652010d06b5b16fe852cdc8441df1ef74a47d43608fba9842779c",
+    "output_sha256": "6734c32ce09e4d90dffb81ec4f784617478bb375c51c7c3c04053eb863f0b863",
+    "source_bytes": 3112260,
+    "output_bytes": 389766,
+    "dimensions": [
+      1600,
+      1200
+    ],
+    "exif_fields": 0,
+    "optimization": "EXIF orientation corrected; longest edge at most 1600px; RGB JPEG quality 72, progressive and optimized, EXIF stripped."
+  },
+  {
+    "source": "images/Shop branding and Signage/IMG_20260917_092131.jpg",
+    "output": "assets/images/shop-branding-and-signage-img-20260917-092131.jpg",
+    "source_sha256": "723e84282601c6b5194a35e6371138d1796db4d1203bf02cf4eb8569ede273fa",
+    "output_sha256": "832764159086e6d6e16c916b26f3f48270fbc41ca0d44fa02f6f154fa445d2a9",
+    "source_bytes": 4289182,
+    "output_bytes": 367763,
+    "dimensions": [
+      1600,
+      1200
+    ],
+    "exif_fields": 0,
+    "optimization": "EXIF orientation corrected; longest edge at most 1600px; RGB JPEG quality 72, progressive and optimized, EXIF stripped."
+  },
+  {
+    "source": "images/Shop branding and Signage/IMG_20260918_122220.jpg",
+    "output": "assets/images/shop-branding-and-signage-img-20260918-122220.jpg",
+    "source_sha256": "b9bdad1c06fe75106fd1c6031c8d030f3ed5b53c61551dca1934da8a9b6e7065",
+    "output_sha256": "28c2fbdbcba809bd9eee3fc25cd6801149845b7c0ebb1ce458f5521bd9fa9ef3",
+    "source_bytes": 3140961,
+    "output_bytes": 336086,
+    "dimensions": [
+      1600,
+      1200
+    ],
+    "exif_fields": 0,
+    "optimization": "EXIF orientation corrected; longest edge at most 1600px; RGB JPEG quality 72, progressive and optimized, EXIF stripped."
+  },
+  {
+    "source": "images/TShirts/c8148203ef13a05cde28b35b7fb1ce8d_0.jpeg",
+    "output": "assets/images/tshirts-c8148203ef13a05cde28b35b7fb1ce8d-0.jpg",
+    "source_sha256": "2e06f9f4dbc4e6b0216cd7b2dfb3b2a299ba5014a13c4dc56d8d990b0c1a8b2c",
+    "output_sha256": "40873e5f0c991e3b303453e17672c05aae22d181ea024899d8be2113ac79924e",
+    "source_bytes": 168512,
+    "output_bytes": 102951,
+    "dimensions": [
+      900,
+      1600
+    ],
+    "exif_fields": 0,
+    "optimization": "EXIF orientation corrected; longest edge at most 1600px; RGB JPEG quality 72, progressive and optimized, EXIF stripped."
+  },
+  {
+    "source": "images/TShirts/IMG_20260912_173514.jpg",
+    "output": "assets/images/tshirts-img-20260912-173514.jpg",
+    "source_sha256": "2901d1be0e1502c9bb50e179ab569b5daf26bb574795dcbb2fb2042e63e52271",
+    "output_sha256": "7488d8e20ced1fcb05bfc541661823dc0bd054ce201e360d8e03542498c3db56",
+    "source_bytes": 1534146,
+    "output_bytes": 105894,
+    "dimensions": [
+      1600,
+      1200
+    ],
+    "exif_fields": 0,
+    "optimization": "EXIF orientation corrected; longest edge at most 1600px; RGB JPEG quality 72, progressive and optimized, EXIF stripped."
+  },
+  {
+    "source": "images/Vehicle branding/IMG_20250920_160015.jpg",
+    "output": "assets/images/vehicle-branding-img-20250920-160015.jpg",
+    "source_sha256": "22600246229202951dd3426f464f16ec87a785ccbb6c30238a100bb2a0eafd84",
+    "output_sha256": "60850e62d855d8181dd6f04a9b412d20eaa1cfcbe36157dff2a23d7bca51eb46",
+    "source_bytes": 1349282,
+    "output_bytes": 131593,
+    "dimensions": [
+      1600,
+      720
+    ],
+    "exif_fields": 0,
+    "optimization": "EXIF orientation corrected; longest edge at most 1600px; RGB JPEG quality 72, progressive and optimized, EXIF stripped."
+  },
+  {
+    "source": "images/Vehicle branding/IMG_20260227_193737.jpg",
+    "output": "assets/images/vehicle-branding-img-20260227-193737.jpg",
+    "source_sha256": "1e1bb1b805d26c8121f9ea1fe32b3718e82772f05e7bc1c81da38990ca89fa35",
+    "output_sha256": "418194fcc496a906e62643bcddc2fc1094f4d63191dc5aa812fa171b39a3336f",
+    "source_bytes": 1141864,
+    "output_bytes": 115930,
+    "dimensions": [
+      1600,
+      720
+    ],
+    "exif_fields": 0,
+    "optimization": "EXIF orientation corrected; longest edge at most 1600px; RGB JPEG quality 72, progressive and optimized, EXIF stripped."
+  },
+  {
+    "source": "images/Vehicle branding/IMG_20260227_193750.jpg",
+    "output": "assets/images/vehicle-branding-img-20260227-193750.jpg",
+    "source_sha256": "f48a4a0c74a3b2cf7e4eb6fe7e136788dc4ef04418fa20b478944d1e85bdcfbd",
+    "output_sha256": "b86f21d23ab1f27bea54917fe31c643926a20801ac7be72b8652cee3eb6d6e2f",
+    "source_bytes": 974821,
+    "output_bytes": 100566,
+    "dimensions": [
+      1600,
+      720
+    ],
+    "exif_fields": 0,
+    "optimization": "EXIF orientation corrected; longest edge at most 1600px; RGB JPEG quality 72, progressive and optimized, EXIF stripped."
+  },
+  {
+    "source": "images/Vehicle branding/IMG_20260227_193805.jpg",
+    "output": "assets/images/vehicle-branding-img-20260227-193805.jpg",
+    "source_sha256": "595486f6727c849dacab34d5652853ab20620fd86ddbca1d574acdfd751ed7f5",
+    "output_sha256": "628cf72e0674232095b4241211d65e91d7eade5d45b6424997eb38e05782c1d8",
+    "source_bytes": 936815,
+    "output_bytes": 99116,
+    "dimensions": [
+      1600,
+      720
+    ],
+    "exif_fields": 0,
+    "optimization": "EXIF orientation corrected; longest edge at most 1600px; RGB JPEG quality 72, progressive and optimized, EXIF stripped."
+  },
+  {
+    "source": "images/Vehicle branding/IMG_20260606_121807.jpg",
+    "output": "assets/images/vehicle-branding-img-20260606-121807.jpg",
+    "source_sha256": "fd21a9f010ecf531437dff5d43a874fcb40b61917da5e08ee0431a7440e4ca37",
+    "output_sha256": "1b6f3ba7fbc12cfd3d3160c3d99764af1f66f2e48a04a308fb6732acf1bb0bbd",
+    "source_bytes": 1464839,
+    "output_bytes": 152704,
+    "dimensions": [
+      1600,
+      1200
+    ],
+    "exif_fields": 0,
+    "optimization": "EXIF orientation corrected; longest edge at most 1600px; RGB JPEG quality 72, progressive and optimized, EXIF stripped."
+  },
+  {
+    "source": "images/Vehicle branding/IMG_20260607_152419.jpg",
+    "output": "assets/images/vehicle-branding-img-20260607-152419.jpg",
+    "source_sha256": "b942607187ac4ac2e8dbd0d457559d4b0771719e0d91fdeaa591fd272e6bed84",
+    "output_sha256": "f01ba739f9f1d3ff6865d30ba0ff713186e835d91cb4d20873ca5b9657201843",
+    "source_bytes": 2202949,
+    "output_bytes": 224476,
+    "dimensions": [
+      1200,
+      1600
+    ],
+    "exif_fields": 0,
+    "optimization": "EXIF orientation corrected; longest edge at most 1600px; RGB JPEG quality 72, progressive and optimized, EXIF stripped."
+  },
+  {
+    "source": "images/Vehicle branding/IMG_20260607_152444.jpg",
+    "output": "assets/images/vehicle-branding-img-20260607-152444.jpg",
+    "source_sha256": "06e29c49da58e14b8590ac79869d19c3d385f20324039f1901ce9968b38f8212",
+    "output_sha256": "81066fb3c32325d8d55371560fa97e5ca41e582323c5d0976042a95b011c2d26",
+    "source_bytes": 2066397,
+    "output_bytes": 212170,
+    "dimensions": [
+      1200,
+      1600
+    ],
+    "exif_fields": 0,
+    "optimization": "EXIF orientation corrected; longest edge at most 1600px; RGB JPEG quality 72, progressive and optimized, EXIF stripped."
+  },
+  {
+    "source": "images/Vehicle branding/IMG_20260708_193418.jpg",
+    "output": "assets/images/vehicle-branding-img-20260708-193418.jpg",
+    "source_sha256": "08a4ca5f3b57f5b66fbcea002882abf03d118e4fd8d260b1dccfd876c2ba43db",
+    "output_sha256": "dab7c025ea98f65bdd3f05d42e43e1e38f639b92b94eaa6f3f391861f8e0fec0",
+    "source_bytes": 1711459,
+    "output_bytes": 158152,
+    "dimensions": [
+      1600,
+      1200
+    ],
+    "exif_fields": 0,
+    "optimization": "EXIF orientation corrected; longest edge at most 1600px; RGB JPEG quality 72, progressive and optimized, EXIF stripped."
+  },
+  {
+    "source": "images/Vehicle branding/IMG_20260709_153849.jpg",
+    "output": "assets/images/vehicle-branding-img-20260709-153849.jpg",
+    "source_sha256": "8591fc6aef68b056d38147ec96b31c1963b51d16605e6b00f2a56ad3802edfed",
+    "output_sha256": "48e6d5441dc8fe54cc08364466dac45cecc4edc3cf29ebfd606de5adc7e2f1ec",
+    "source_bytes": 1398050,
+    "output_bytes": 145356,
+    "dimensions": [
+      1200,
+      1600
+    ],
+    "exif_fields": 0,
+    "optimization": "EXIF orientation corrected; longest edge at most 1600px; RGB JPEG quality 72, progressive and optimized, EXIF stripped."
+  },
+  {
+    "source": "images/Vehicle branding/IMG_20260710_151159.jpg",
+    "output": "assets/images/vehicle-branding-img-20260710-151159.jpg",
+    "source_sha256": "2d9aeea8c649da447bd88716956f2ce71d7b2849685b1b8a69340a38f2978e26",
+    "output_sha256": "c7337b710f41e6ab411e0d89babb54b29677ed29ada1537872516c472bf3c878",
+    "source_bytes": 2402285,
+    "output_bytes": 266846,
+    "dimensions": [
+      1600,
+      1200
+    ],
+    "exif_fields": 0,
+    "optimization": "EXIF orientation corrected; longest edge at most 1600px; RGB JPEG quality 72, progressive and optimized, EXIF stripped."
   }
 ]

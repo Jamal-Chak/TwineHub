@@ -1,6 +1,8 @@
 dist/
 __pycache__/
-qa/
+qa/*
+!qa/media-before.json
+!qa/original-media-before.json
 media-review.jpg
 .codex-deploy-cache/
 .vercel/

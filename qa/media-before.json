@@ -1,0 +1,877 @@
+{
+  "entries": [
+    {
+      "id": 1,
+      "src": "assets/images/image1.jpg",
+      "type": "image",
+      "title": "Brand identity concepts",
+      "category": "branding",
+      "alt": "Illustrated overview of brand identity",
+      "description": "Illustrated overview of brand identity",
+      "src_sha256": "61a0465d528ff51aa2219b0f3d3525f52467a0ae9dd89555cf20f70aa4e11e0a",
+      "src_bytes": 60332
+    },
+    {
+      "id": 2,
+      "src": "assets/images/image2.jpg",
+      "type": "image",
+      "title": "PM Motorcycles signboard",
+      "category": "signage",
+      "alt": "PM Motorcycles printed signboard",
+      "description": "PM Motorcycles printed signboard",
+      "src_sha256": "aab6befe4ada7334058234ee00d110e0acec6f5033a4d6c81b71503bf743751c",
+      "src_bytes": 152450
+    },
+    {
+      "id": 3,
+      "src": "assets/images/image3.jpg",
+      "type": "image",
+      "title": "Street Art Vibes apparel design",
+      "category": "printing",
+      "alt": "Colourful artwork on a black T-shirt",
+      "description": "Colourful artwork on a black T-shirt",
+      "src_sha256": "1ddc9d3f740ec3b871553b3dd2b80ad0d6de1d04d107fea54030ccb14602b9c2",
+      "src_bytes": 61766
+    },
+    {
+      "id": 4,
+      "src": "assets/images/image4.jpg",
+      "type": "image",
+      "title": "Branded delivery truck",
+      "category": "vehicle",
+      "alt": "Delivery truck with full side branding",
+      "description": "Delivery truck with full side branding",
+      "src_sha256": "203d76d6b0ed4ca03669e21f54a19fe9d680344489d0cfa756e9d65fd65f66bf",
+      "src_bytes": 164421
+    },
+    {
+      "id": 5,
+      "src": "assets/images/image5.jpg",
+      "type": "image",
+      "title": "Event pull-up banners",
+      "category": "banners",
+      "alt": "Three printed pull-up banners",
+      "description": "Three printed pull-up banners",
+      "src_sha256": "4e8a5842115675948a0cb158680caed2bf75821e256108a7c4201b6ac89af51a",
+      "src_bytes": 135745
+    },
+    {
+      "id": 6,
+      "src": "assets/images/image6.jpg",
+      "type": "image",
+      "title": "Logo design collection",
+      "category": "branding",
+      "alt": "Collection of colourful logo concepts",
+      "description": "Collection of colourful logo concepts",
+      "src_sha256": "333a040a5a60a9548ab68c5a7226f68cad3672d146b636b23fae292ac3a31bb9",
+      "src_bytes": 105993
+    },
+    {
+      "id": 7,
+      "src": "assets/images/image8.jpg",
+      "type": "image",
+      "title": "Printed red T-shirt",
+      "category": "printing",
+      "alt": "Red T-shirt at a printing workstation",
+      "description": "Red T-shirt at a printing workstation",
+      "src_sha256": "90235ba480709b59a69fa9434b773187a3b2d8e5fd5efee561f11a43a36d8059",
+      "src_bytes": 115704
+    },
+    {
+      "id": 8,
+      "src": "assets/images/image9.jpg",
+      "type": "image",
+      "title": "Automotive logo concept",
+      "category": "branding",
+      "alt": "Red and white automotive logo concept",
+      "description": "Red and white automotive logo concept",
+      "src_sha256": "cb02f6980e45d426c4f506d85c8228584602e7d44fa1b9533beccc58ab2c6ded",
+      "src_bytes": 13222
+    },
+    {
+      "id": 9,
+      "src": "assets/images/image10.jpg",
+      "type": "image",
+      "title": "Shopfront display",
+      "category": "signage",
+      "alt": "Printed shopfront and window display",
+      "description": "Printed shopfront and window display",
+      "src_sha256": "8b13cc420dffce35edcccd88cfa31a97e68168c203e6ab9c099de73f8c42b378",
+      "src_bytes": 151756
+    },
+    {
+      "id": 10,
+      "src": "assets/images/image11.jpg",
+      "type": "image",
+      "title": "Stationery design",
+      "category": "branding",
+      "alt": "Coordinated stationery design presentation",
+      "description": "Coordinated stationery design presentation",
+      "src_sha256": "bf0af7eeb35b520c2464fce542ea1c579faa85060bc8da2ea3dd1a60b35c4475",
+      "src_bytes": 74781
+    },
+    {
+      "id": 11,
+      "src": "assets/images/image12.jpg",
+      "type": "image",
+      "title": "Window graphics",
+      "category": "signage",
+      "alt": "Printed graphics installed on a window",
+      "description": "Printed graphics installed on a window",
+      "src_sha256": "441fce0d43f8a1b4a781541a23b6d136f8f5a26b312992fef2fae162fc327efd",
+      "src_bytes": 30766
+    },
+    {
+      "id": 12,
+      "src": "assets/images/image13.jpg",
+      "type": "image",
+      "title": "Saved by Grace apparel",
+      "category": "printing",
+      "alt": "Printed Saved by Grace T-shirt",
+      "description": "Printed Saved by Grace T-shirt",
+      "src_sha256": "da787a72b12889609922b7c1acac00f8d1929fd67cce667161cd5b5f69b33ede",
+      "src_bytes": 99311
+    },
+    {
+      "id": 13,
+      "src": "assets/images/image14.jpg",
+      "type": "image",
+      "title": "Branded pickup",
+      "category": "vehicle",
+      "alt": "White pickup with business decals",
+      "description": "White pickup with business decals",
+      "src_sha256": "c893e886f4e1e1c6aad6adaadd71af22180d3c2584e992e7605b496e86108adc",
+      "src_bytes": 204131
+    },
+    {
+      "id": 14,
+      "src": "assets/images/tshirt-orlando-pirates-front.jpg",
+      "type": "image",
+      "title": "Display banners in production",
+      "category": "banners",
+      "alt": "Printed display banners in the workshop",
+      "description": "Printed display banners in the workshop",
+      "src_sha256": "aa5707f18d7d4b606c1de8803e99f8a5c544657dff475322cd244dd752de45d5",
+      "src_bytes": 168378
+    },
+    {
+      "id": 15,
+      "src": "assets/images/tee-proud-buccaneer-back.jpg",
+      "type": "image",
+      "title": "Orlando Pirates printed shirt",
+      "category": "printing",
+      "alt": "Orlando Pirates design printed on a black shirt",
+      "description": "Orlando Pirates design printed on a black shirt",
+      "src_sha256": "7dab917aa4d88993b99d8014d272597c1b5933bea36680cb77742c13a03e98f8",
+      "src_bytes": 157854
+    },
+    {
+      "id": 16,
+      "src": "assets/images/brand-wall-showroom.jpg",
+      "type": "image",
+      "title": "Proud Buccaneer shirt",
+      "category": "printing",
+      "alt": "Proud Buccaneer text printed on a white shirt",
+      "description": "Proud Buccaneer text printed on a white shirt",
+      "src_sha256": "35ca88a91e3c1329fb5d7d0e51243dbd5e2b95072a6e08bad53bff220b7e61dd",
+      "src_bytes": 109698
+    },
+    {
+      "id": 17,
+      "src": "assets/images/wall-banner-quantum.jpg",
+      "type": "image",
+      "title": "Outdoor business sign",
+      "category": "signage",
+      "alt": "Printed business sign mounted outside",
+      "description": "Printed business sign mounted outside",
+      "src_sha256": "fb920c4aec318bba9089f4b4ac2e66a3d5180bee5c0c07af31bfe49fc90b7d5a",
+      "src_bytes": 222177
+    },
+    {
+      "id": 18,
+      "src": "assets/images/branded-gazebo-event.jpg",
+      "type": "image",
+      "title": "Tow truck branding",
+      "category": "vehicle",
+      "alt": "Tow truck with colourful business branding",
+      "description": "Tow truck with colourful business branding",
+      "src_sha256": "4021f2795156d3b6152a54156f23d00056fa02f6d2dce14a70c37471f400122f",
+      "src_bytes": 156720
+    },
+    {
+      "id": 19,
+      "src": "assets/images/pullup-hollywood-signage.jpg",
+      "type": "image",
+      "title": "Shopfront window graphics",
+      "category": "signage",
+      "alt": "Printed signage and window graphics on a shopfront",
+      "description": "Printed signage and window graphics on a shopfront",
+      "src_sha256": "de97a715801b640c329f34bb477a5ec98f67cc6dabad9bb07d771532ccf7ea40",
+      "src_bytes": 204195
+    },
+    {
+      "id": 20,
+      "src": "assets/images/branded-gazebo-fnb.jpg",
+      "type": "image",
+      "title": "Pavement sign",
+      "category": "signage",
+      "alt": "Freestanding business sign beside a pavement",
+      "description": "Freestanding business sign beside a pavement",
+      "src_sha256": "c6d144970e2052d6b51100478b5023041592ce78e9ca95cd6dc87524140c76f9",
+      "src_bytes": 198273
+    },
+    {
+      "id": 21,
+      "src": "assets/images/brand-wall-studio.jpg",
+      "type": "image",
+      "title": "Printed shopfront display",
+      "category": "signage",
+      "alt": "Printed display installed on a brick shopfront",
+      "description": "Printed display installed on a brick shopfront",
+      "src_sha256": "a20325567c94d168b0b4e2a08306702a8d99f51f4b3406b15b99f7c9ac35d830",
+      "src_bytes": 332735
+    },
+    {
+      "id": 22,
+      "src": "assets/images/xframe-fighter-banner.jpg",
+      "type": "image",
+      "title": "Eye Doctor exterior banner",
+      "category": "banners",
+      "alt": "Eye Doctor banner installed on an exterior wall",
+      "description": "Eye Doctor banner installed on an exterior wall",
+      "src_sha256": "b141c0b3aa6805e5578ccf13ab18eccdf0fef8c56c6bf7425cf0fa5069cd4c1e",
+      "src_bytes": 203171
+    },
+    {
+      "id": 23,
+      "src": "assets/images/signage-wall-interior.jpg",
+      "type": "image",
+      "title": "Eye Doctor pavement sign",
+      "category": "signage",
+      "alt": "Eye Doctor circular pavement sign",
+      "description": "Eye Doctor circular pavement sign",
+      "src_sha256": "e24ba4a71050697b336251288e6d8ab1d13b1658227decdfa6a76bad1513e26d",
+      "src_bytes": 326890
+    },
+    {
+      "id": 24,
+      "src": "assets/images/signage-installation.jpg",
+      "type": "image",
+      "title": "Shopfront signage installation",
+      "category": "signage",
+      "alt": "Shopfront with printed signage and window graphics",
+      "description": "Shopfront with printed signage and window graphics",
+      "src_sha256": "975c1de8a42c52ab7f83aefcadf00da973cf60e4b0b171fd70d86a60edfe5529",
+      "src_bytes": 300211
+    },
+    {
+      "id": 25,
+      "src": "assets/images/branding-mockup-flyer.jpg",
+      "type": "image",
+      "title": "Branding services artwork",
+      "category": "branding",
+      "alt": "Tone4DMedia promotional branding artwork",
+      "description": "Tone4DMedia promotional branding artwork",
+      "src_sha256": "45613f7c80093f98c8cece9fe31fb93502b114adeafffddd17dea4c37fcf7bbd",
+      "src_bytes": 216773
+    },
+    {
+      "id": 26,
+      "src": "assets/images/vehicle-wrap-mockup.jpg",
+      "type": "image",
+      "title": "Vehicle branding artwork",
+      "category": "vehicle",
+      "alt": "Tone4DMedia promotional vehicle branding artwork",
+      "description": "Tone4DMedia promotional vehicle branding artwork",
+      "src_sha256": "ec07709e99e0fb2fb296ae4ff98bb4d51cdcac6a39a46235d8b15dba951a7b5d",
+      "src_bytes": 246898
+    },
+    {
+      "id": 27,
+      "src": "assets/images/apparel-tshirt-mockup.jpg",
+      "type": "image",
+      "title": "T-shirt printing artwork",
+      "category": "printing",
+      "alt": "Tone4DMedia promotional T-shirt printing artwork",
+      "description": "Tone4DMedia promotional T-shirt printing artwork",
+      "src_sha256": "221ffd69748b73572f91a8d016db4e87771a0810e452735f486ee0c23eb9a656",
+      "src_bytes": 169276
+    },
+    {
+      "id": 28,
+      "src": "assets/videos/studio-tour.mp4",
+      "type": "video",
+      "poster": "assets/posters/poster-studio-tour.jpg",
+      "title": "Outdoor signage video",
+      "category": "signage",
+      "alt": "Outdoor signage video",
+      "description": "A supplied project video showing printed signage in place.",
+      "src_sha256": "4b671f3559aa3c75c2a8f493ea70046005416968d40c938b9bf0674636a6bdd6",
+      "src_bytes": 5521383,
+      "poster_sha256": "150ebd13fedce0d72ed44beecea268783ff4d4cd5684ec300f37fd1d7ca3abca",
+      "poster_bytes": 66659
+    },
+    {
+      "id": 29,
+      "src": "assets/videos/project-install.mp4",
+      "type": "video",
+      "poster": "assets/posters/poster-project-install.jpg",
+      "title": "Shopfront installation video",
+      "category": "signage",
+      "alt": "Shopfront installation video",
+      "description": "A supplied project video showing printed signage in place.",
+      "src_sha256": "bdd27032a12d400acff63938b73ea19d73563a23be83c3b209178801d86f441e",
+      "src_bytes": 5382467,
+      "poster_sha256": "b0e0f372fe9c4d6b7bf6e8d51611e2d0912033755fb99183a6618d4e2ed338f8",
+      "poster_bytes": 81443
+    },
+    {
+      "id": 30,
+      "src": "assets/videos/branding-showcase.mp4",
+      "type": "video",
+      "poster": "assets/posters/poster-branding-showcase.jpg",
+      "title": "Printed display video",
+      "category": "signage",
+      "alt": "Printed display video",
+      "description": "A supplied project video showing printed signage in place.",
+      "src_sha256": "14d2a631127c96b6ea386a12c1374285a9cd00fe232c8ee5ba45920f7579149c",
+      "src_bytes": 11411078,
+      "poster_sha256": "dc532066397fcb7a31dd4f691dd7db01c0c48e73a0598dfa2beb869eca48a3d5",
+      "poster_bytes": 71812
+    }
+  ],
+  "counts": {
+    "images": 27,
+    "videos": 3
+  },
+  "snapshot_date": "2026-10-13",
+  "source_files": [
+    {
+      "source": "images/2026-05-09-163723937.mp4",
+      "bytes": 10467415,
+      "sha256": "bf5f594f7528d3327d13a0f76a3e31b375c58d14c9c2695e392e9341b4825356"
+    },
+    {
+      "source": "images/background.jpg",
+      "bytes": 71823,
+      "sha256": "bd6ff5e34949baddabd6aadeeff25d9caa68bcec0245bf6f85fef1cc5e91b513"
+    },
+    {
+      "source": "images/Banners/IMG_20250510_095659.jpg",
+      "bytes": 1072856,
+      "sha256": "6484094e04c3bfcf87a19bdd5ed9e2ae4fa7caab85d0a7c9e7d349ce410182dc"
+    },
+    {
+      "source": "images/Banners/IMG_20250709_115440.jpg",
+      "bytes": 1705481,
+      "sha256": "f42c04b735f4ecf251b860807207acd1e7918e135460459f8251f0ee043bd286"
+    },
+    {
+      "source": "images/Banners/IMG_20251223_194243.jpg",
+      "bytes": 1177912,
+      "sha256": "9aef4acb590af8b9b9accc43758649c48db1187f8675ccdfec3e3e846c81856b"
+    },
+    {
+      "source": "images/Banners/IMG_20260114_103248.jpg",
+      "bytes": 2037478,
+      "sha256": "8e451fae14d2137d15af4effed887151284e13cd8f590ce2898a454a2730f830"
+    },
+    {
+      "source": "images/Banners/IMG_20260320_130252.jpg",
+      "bytes": 967421,
+      "sha256": "7db5c85e226adf2ef6d9f38f764b597f5f910c671ca1649395b4a44cd88b3e57"
+    },
+    {
+      "source": "images/Banners/IMG_20260521_205638.jpg",
+      "bytes": 1747325,
+      "sha256": "dcfdc3d12e836cb84b9f905be9f50a7698e4f3127f0557520a98453577ce173d"
+    },
+    {
+      "source": "images/Banners/IMG_20260707_234004.jpg",
+      "bytes": 1523606,
+      "sha256": "07c4c0b48896cb35f0baf938f09f56aff8dc5cf7c2c7544c4c159e7621334801"
+    },
+    {
+      "source": "images/Branding_040120.png",
+      "bytes": 2195130,
+      "sha256": "8135ed84faa94a5a30cbe750201c7e5f9bd14e8168e584ab98c51ab0359e0763"
+    },
+    {
+      "source": "images/facebook.png",
+      "bytes": 31116,
+      "sha256": "6bdbb0125272d9586e12678bd793ae004ce6899c63103b59c1e43408a8a6a2fb"
+    },
+    {
+      "source": "images/facebook.svg",
+      "bytes": 289,
+      "sha256": "535948750a22828e18dfb737a903b3af155bae5ad69ab49686adda0333d85308"
+    },
+    {
+      "source": "images/hero.jpg",
+      "bytes": 44728,
+      "sha256": "30b78d62270b658ff9b04b35c5ae8f69e18aef170f39b9f6cb3ee830a153d01d"
+    },
+    {
+      "source": "images/IMG_20250801_120648.jpg.jpeg",
+      "bytes": 3508013,
+      "sha256": "9764835c558ae88406b2ad31d371357aaf4bc619e34a566e3d327d09e9eb76fd"
+    },
+    {
+      "source": "images/IMG_20251017_154858_edit_9745907859040.jpg.jpeg",
+      "bytes": 1405428,
+      "sha256": "94e880f14ab1ea5009a71dd34595fe2563db41780534b9f5393cf5312c8b0a73"
+    },
+    {
+      "source": "images/IMG_20251017_154912_edit_9763115020179.jpg.jpeg",
+      "bytes": 1871730,
+      "sha256": "d2c256d8bb6b0080b73b12afb63f3365b40aa049d0bf0d8b7b421c47f7338a50"
+    },
+    {
+      "source": "images/IMG_20260318_162144.jpg.jpeg",
+      "bytes": 5036174,
+      "sha256": "0c2c8321e44d7f12e8a340af6dbfe58fbe14b45a7ff32897aec197dd0214afd4"
+    },
+    {
+      "source": "images/IMG_20260408_124114.jpg.jpeg",
+      "bytes": 4499209,
+      "sha256": "5534e5a5d5afb753befd08a7ca3e63ef277af9c0a0f240bbddf3f96b39c363a5"
+    },
+    {
+      "source": "images/IMG_20260720_151231.jpg.jpeg",
+      "bytes": 3265471,
+      "sha256": "1984da169718776973f9baf9deb07174178991a0f77e127d67e5a80533791224"
+    },
+    {
+      "source": "images/IMG_20260723_103538.jpg.jpeg",
+      "bytes": 3289019,
+      "sha256": "91666963a64d4907c50433515857eba6a579fd4f92002b46ddb55c5493d7ae31"
+    },
+    {
+      "source": "images/IMG_20260804_124057.jpg.jpeg",
+      "bytes": 6020489,
+      "sha256": "ee1a456f19d9a5fca746966a8c0aa38fbe2658663bde02ffb2d0097f633ee898"
+    },
+    {
+      "source": "images/IMG_20260810_101435.jpg.jpeg",
+      "bytes": 2975086,
+      "sha256": "8b1727f72b5045dc5ce1671432dd2f21fd6ec8766383b5ccaa25bb7bfe9e1e42"
+    },
+    {
+      "source": "images/IMG_20260910_100500.jpg.jpeg",
+      "bytes": 5088055,
+      "sha256": "a0a3456efe89ea1516555c6eeee2d1370b350eb0810adfbb899356666538f733"
+    },
+    {
+      "source": "images/IMG_20260910_100521.jpg.jpeg",
+      "bytes": 5236692,
+      "sha256": "be6e5d24bb6d99dd6aeca9731ae5b441c51ddbe5a75e42a13daf771d746ae8ab"
+    },
+    {
+      "source": "images/instagram.png",
+      "bytes": 35967,
+      "sha256": "b45a1784d06cb8926e5446ef049e35d084f6feec9f8a95e45ddc096e0e306314"
+    },
+    {
+      "source": "images/instagram.svg",
+      "bytes": 582,
+      "sha256": "0adeb21a9687f2db8c479400d4681030b6d2705d2fe5573b3736e11384c43b31"
+    },
+    {
+      "source": "images/logo.png",
+      "bytes": 36146,
+      "sha256": "a571752e2e6ac9f729047d1c2a9c712eff723cb9e8ae4e6582123995a38f919a"
+    },
+    {
+      "source": "images/Shop branding and Signage/IMG_20260703_121650.jpg",
+      "bytes": 2198212,
+      "sha256": "bec2470bc6ba284bc9bb7f2eed4dcbe651cf61940d75311db502747c144e183b"
+    },
+    {
+      "source": "images/Shop branding and Signage/IMG_20260703_135206.jpg",
+      "bytes": 2644783,
+      "sha256": "01bc0453c5f42af172ee596c4fd8f2e7a5f36619100157b9db881217832ba457"
+    },
+    {
+      "source": "images/Shop branding and Signage/IMG_20260910_100440.jpg",
+      "bytes": 2171671,
+      "sha256": "8f042b50015bd41f50980831e4eadbe9c33a5654dade3173b009e6911279a1e3"
+    },
+    {
+      "source": "images/Shop branding and Signage/IMG_20260911_131413.jpg",
+      "bytes": 3112260,
+      "sha256": "bd204d5006e652010d06b5b16fe852cdc8441df1ef74a47d43608fba9842779c"
+    },
+    {
+      "source": "images/Shop branding and Signage/IMG_20260917_092131.jpg",
+      "bytes": 4289182,
+      "sha256": "723e84282601c6b5194a35e6371138d1796db4d1203bf02cf4eb8569ede273fa"
+    },
+    {
+      "source": "images/Shop branding and Signage/IMG_20260918_122220.jpg",
+      "bytes": 3140961,
+      "sha256": "b9bdad1c06fe75106fd1c6031c8d030f3ed5b53c61551dca1934da8a9b6e7065"
+    },
+    {
+      "source": "images/Tshirt printing_040152.png",
+      "bytes": 1831733,
+      "sha256": "67615215abaf886abb544bec3e6d9d274609bc8112d8d80a5e80ab411eda1e94"
+    },
+    {
+      "source": "images/TShirts/c8148203ef13a05cde28b35b7fb1ce8d_0.jpeg",
+      "bytes": 168512,
+      "sha256": "2e06f9f4dbc4e6b0216cd7b2dfb3b2a299ba5014a13c4dc56d8d990b0c1a8b2c"
+    },
+    {
+      "source": "images/TShirts/IMG_20260912_173514.jpg",
+      "bytes": 1534146,
+      "sha256": "2901d1be0e1502c9bb50e179ab569b5daf26bb574795dcbb2fb2042e63e52271"
+    },
+    {
+      "source": "images/Vehicle branding/IMG_20250920_160015.jpg",
+      "bytes": 1349282,
+      "sha256": "22600246229202951dd3426f464f16ec87a785ccbb6c30238a100bb2a0eafd84"
+    },
+    {
+      "source": "images/Vehicle branding/IMG_20260227_193737.jpg",
+      "bytes": 1141864,
+      "sha256": "1e1bb1b805d26c8121f9ea1fe32b3718e82772f05e7bc1c81da38990ca89fa35"
+    },
+    {
+      "source": "images/Vehicle branding/IMG_20260227_193750.jpg",
+      "bytes": 974821,
+      "sha256": "f48a4a0c74a3b2cf7e4eb6fe7e136788dc4ef04418fa20b478944d1e85bdcfbd"
+    },
+    {
+      "source": "images/Vehicle branding/IMG_20260227_193805.jpg",
+      "bytes": 936815,
+      "sha256": "595486f6727c849dacab34d5652853ab20620fd86ddbca1d574acdfd751ed7f5"
+    },
+    {
+      "source": "images/Vehicle branding/IMG_20260606_121807.jpg",
+      "bytes": 1464839,
+      "sha256": "fd21a9f010ecf531437dff5d43a874fcb40b61917da5e08ee0431a7440e4ca37"
+    },
+    {
+      "source": "images/Vehicle branding/IMG_20260607_152419.jpg",
+      "bytes": 2202949,
+      "sha256": "b942607187ac4ac2e8dbd0d457559d4b0771719e0d91fdeaa591fd272e6bed84"
+    },
+    {
+      "source": "images/Vehicle branding/IMG_20260607_152444.jpg",
+      "bytes": 2066397,
+      "sha256": "06e29c49da58e14b8590ac79869d19c3d385f20324039f1901ce9968b38f8212"
+    },
+    {
+      "source": "images/Vehicle branding/IMG_20260708_193418.jpg",
+      "bytes": 1711459,
+      "sha256": "08a4ca5f3b57f5b66fbcea002882abf03d118e4fd8d260b1dccfd876c2ba43db"
+    },
+    {
+      "source": "images/Vehicle branding/IMG_20260709_153849.jpg",
+      "bytes": 1398050,
+      "sha256": "8591fc6aef68b056d38147ec96b31c1963b51d16605e6b00f2a56ad3802edfed"
+    },
+    {
+      "source": "images/Vehicle branding/IMG_20260710_151159.jpg",
+      "bytes": 2402285,
+      "sha256": "2d9aeea8c649da447bd88716956f2ce71d7b2849685b1b8a69340a38f2978e26"
+    },
+    {
+      "source": "images/Vehicle_040039.png",
+      "bytes": 2031034,
+      "sha256": "c6a808770fa4043d3a2d0df33a022b9ae8eddbb50444585a3f6058e972de46cd"
+    },
+    {
+      "source": "images/VID_20250901_162957.mp4",
+      "bytes": 44373928,
+      "sha256": "9a5037a2a4baad98047d9089dbc31e52d95f4b855b10bdd3e8e46e7052ab91a6"
+    },
+    {
+      "source": "images/VID_20260424_122709.mp4",
+      "bytes": 65218773,
+      "sha256": "ffc03980017fb8af827491d9c0e5766cf7313fa6af0ccd43022251f51e7c1f68"
+    },
+    {
+      "source": "images/whatsapp.png",
+      "bytes": 35967,
+      "sha256": "b45a1784d06cb8926e5446ef049e35d084f6feec9f8a95e45ddc096e0e306314"
+    },
+    {
+      "source": "images/whatsapp.svg",
+      "bytes": 652,
+      "sha256": "6c595493e01d0a9847d282fb6d58a7b57c9bf7f6a3b6d923278d3bc98d38ab44"
+    },
+    {
+      "source": "gallery/image1.jpg",
+      "bytes": 67734,
+      "sha256": "3613400ba11c6c1fad165ae5f1db7310c27fedfc1a59cf33d5e7fa29c8a50558"
+    },
+    {
+      "source": "gallery/image10.jpg",
+      "bytes": 153903,
+      "sha256": "4e1df1860a25085cffcc1f4aad75d27587476d9b1a5bfd849ec90ce920bd7208"
+    },
+    {
+      "source": "gallery/image11.jpg",
+      "bytes": 84031,
+      "sha256": "4d6f05717785d69e69c95edddd59e1d4b0a329917a3a0a2755828a4605df89e9"
+    },
+    {
+      "source": "gallery/image12.jpg",
+      "bytes": 31760,
+      "sha256": "f8150c76bbd661c657c79d88725ca44a239bc7f165ecf6b345db7f3a9c6ada52"
+    },
+    {
+      "source": "gallery/image13.jpg",
+      "bytes": 101614,
+      "sha256": "6da35711d6d5e049af99ea5c75d0b5eb2a2174ff80779f48a3333efea8b087a3"
+    },
+    {
+      "source": "gallery/image14.jpg",
+      "bytes": 206734,
+      "sha256": "0db17ce787055d26c7b565a77ab66b2f2ddc7d60c8c834e68140768ad41fe946"
+    },
+    {
+      "source": "gallery/image2.jpg",
+      "bytes": 154786,
+      "sha256": "69348ebd71986430bcb95320b8829176c416177785918b9e06b011071fed7a97"
+    },
+    {
+      "source": "gallery/image3.jpg",
+      "bytes": 69999,
+      "sha256": "510dbfa777eea8dd8c24b15894f6c39cbd29744f27691e99378466ef0be00cca"
+    },
+    {
+      "source": "gallery/image4.jpg",
+      "bytes": 167748,
+      "sha256": "157169c59906eb48d4cc645e4e91a880c10d85c4136a61aaef56cd1b64c28548"
+    },
+    {
+      "source": "gallery/image5.jpg",
+      "bytes": 138318,
+      "sha256": "6ef7d0575e9e0faec4ae319632653cf7f41abdc99b2ee8f1de105bc0c6be9a86"
+    },
+    {
+      "source": "gallery/image6.jpg",
+      "bytes": 120056,
+      "sha256": "6d5b32ea02a2bef26eca472b20d581e2ced5626699b1d668b033c2ce7aaaf0ce"
+    },
+    {
+      "source": "gallery/image7.jpg",
+      "bytes": 120456,
+      "sha256": "c97e59a347a90183c7911c1114c6e80675112e835c9ce04802f0709e495c68b9"
+    },
+    {
+      "source": "gallery/image8.jpg",
+      "bytes": 117612,
+      "sha256": "7fdadf4dabe2163f586d246723d6e6c42f22f57a0db64a46b749f5a6a65c2708"
+    },
+    {
+      "source": "gallery/image9.jpg",
+      "bytes": 15290,
+      "sha256": "c119117b40a20cbb1807908b378d47d869900f796ed647b0fceec8df8c58a83d"
+    },
+    {
+      "source": "gallery/metadata.json",
+      "bytes": 2787,
+      "sha256": "45cce0bef1182135c54e70f64ac440960afb83402387d376a22539234bf4dc1d"
+    }
+  ],
+  "public_files": [
+    {
+      "public_asset": "assets/images/apparel-tshirt-mockup.jpg",
+      "bytes": 169276,
+      "sha256": "221ffd69748b73572f91a8d016db4e87771a0810e452735f486ee0c23eb9a656"
+    },
+    {
+      "public_asset": "assets/images/background.jpg",
+      "bytes": 71823,
+      "sha256": "bd6ff5e34949baddabd6aadeeff25d9caa68bcec0245bf6f85fef1cc5e91b513"
+    },
+    {
+      "public_asset": "assets/images/brand-wall-showroom.jpg",
+      "bytes": 109698,
+      "sha256": "35ca88a91e3c1329fb5d7d0e51243dbd5e2b95072a6e08bad53bff220b7e61dd"
+    },
+    {
+      "public_asset": "assets/images/brand-wall-studio.jpg",
+      "bytes": 332735,
+      "sha256": "a20325567c94d168b0b4e2a08306702a8d99f51f4b3406b15b99f7c9ac35d830"
+    },
+    {
+      "public_asset": "assets/images/branded-gazebo-event.jpg",
+      "bytes": 156720,
+      "sha256": "4021f2795156d3b6152a54156f23d00056fa02f6d2dce14a70c37471f400122f"
+    },
+    {
+      "public_asset": "assets/images/branded-gazebo-fnb.jpg",
+      "bytes": 198273,
+      "sha256": "c6d144970e2052d6b51100478b5023041592ce78e9ca95cd6dc87524140c76f9"
+    },
+    {
+      "public_asset": "assets/images/branding-mockup-flyer.jpg",
+      "bytes": 216773,
+      "sha256": "45613f7c80093f98c8cece9fe31fb93502b114adeafffddd17dea4c37fcf7bbd"
+    },
+    {
+      "public_asset": "assets/images/facebook.png",
+      "bytes": 31116,
+      "sha256": "6bdbb0125272d9586e12678bd793ae004ce6899c63103b59c1e43408a8a6a2fb"
+    },
+    {
+      "public_asset": "assets/images/hero.jpg",
+      "bytes": 44728,
+      "sha256": "30b78d62270b658ff9b04b35c5ae8f69e18aef170f39b9f6cb3ee830a153d01d"
+    },
+    {
+      "public_asset": "assets/images/image1.jpg",
+      "bytes": 60332,
+      "sha256": "61a0465d528ff51aa2219b0f3d3525f52467a0ae9dd89555cf20f70aa4e11e0a"
+    },
+    {
+      "public_asset": "assets/images/image10.jpg",
+      "bytes": 151756,
+      "sha256": "8b13cc420dffce35edcccd88cfa31a97e68168c203e6ab9c099de73f8c42b378"
+    },
+    {
+      "public_asset": "assets/images/image11.jpg",
+      "bytes": 74781,
+      "sha256": "bf0af7eeb35b520c2464fce542ea1c579faa85060bc8da2ea3dd1a60b35c4475"
+    },
+    {
+      "public_asset": "assets/images/image12.jpg",
+      "bytes": 30766,
+      "sha256": "441fce0d43f8a1b4a781541a23b6d136f8f5a26b312992fef2fae162fc327efd"
+    },
+    {
+      "public_asset": "assets/images/image13.jpg",
+      "bytes": 99311,
+      "sha256": "da787a72b12889609922b7c1acac00f8d1929fd67cce667161cd5b5f69b33ede"
+    },
+    {
+      "public_asset": "assets/images/image14.jpg",
+      "bytes": 204131,
+      "sha256": "c893e886f4e1e1c6aad6adaadd71af22180d3c2584e992e7605b496e86108adc"
+    },
+    {
+      "public_asset": "assets/images/image2.jpg",
+      "bytes": 152450,
+      "sha256": "aab6befe4ada7334058234ee00d110e0acec6f5033a4d6c81b71503bf743751c"
+    },
+    {
+      "public_asset": "assets/images/image3.jpg",
+      "bytes": 61766,
+      "sha256": "1ddc9d3f740ec3b871553b3dd2b80ad0d6de1d04d107fea54030ccb14602b9c2"
+    },
+    {
+      "public_asset": "assets/images/image4.jpg",
+      "bytes": 164421,
+      "sha256": "203d76d6b0ed4ca03669e21f54a19fe9d680344489d0cfa756e9d65fd65f66bf"
+    },
+    {
+      "public_asset": "assets/images/image5.jpg",
+      "bytes": 135745,
+      "sha256": "4e8a5842115675948a0cb158680caed2bf75821e256108a7c4201b6ac89af51a"
+    },
+    {
+      "public_asset": "assets/images/image6.jpg",
+      "bytes": 105993,
+      "sha256": "333a040a5a60a9548ab68c5a7226f68cad3672d146b636b23fae292ac3a31bb9"
+    },
+    {
+      "public_asset": "assets/images/image8.jpg",
+      "bytes": 115704,
+      "sha256": "90235ba480709b59a69fa9434b773187a3b2d8e5fd5efee561f11a43a36d8059"
+    },
+    {
+      "public_asset": "assets/images/image9.jpg",
+      "bytes": 13222,
+      "sha256": "cb02f6980e45d426c4f506d85c8228584602e7d44fa1b9533beccc58ab2c6ded"
+    },
+    {
+      "public_asset": "assets/images/instagram.png",
+      "bytes": 35967,
+      "sha256": "b45a1784d06cb8926e5446ef049e35d084f6feec9f8a95e45ddc096e0e306314"
+    },
+    {
+      "public_asset": "assets/images/logo.png",
+      "bytes": 36146,
+      "sha256": "a571752e2e6ac9f729047d1c2a9c712eff723cb9e8ae4e6582123995a38f919a"
+    },
+    {
+      "public_asset": "assets/images/pullup-hollywood-signage.jpg",
+      "bytes": 204195,
+      "sha256": "de97a715801b640c329f34bb477a5ec98f67cc6dabad9bb07d771532ccf7ea40"
+    },
+    {
+      "public_asset": "assets/images/signage-installation.jpg",
+      "bytes": 300211,
+      "sha256": "975c1de8a42c52ab7f83aefcadf00da973cf60e4b0b171fd70d86a60edfe5529"
+    },
+    {
+      "public_asset": "assets/images/signage-wall-interior.jpg",
+      "bytes": 326890,
+      "sha256": "e24ba4a71050697b336251288e6d8ab1d13b1658227decdfa6a76bad1513e26d"
+    },
+    {
+      "public_asset": "assets/images/tee-proud-buccaneer-back.jpg",
+      "bytes": 157854,
+      "sha256": "7dab917aa4d88993b99d8014d272597c1b5933bea36680cb77742c13a03e98f8"
+    },
+    {
+      "public_asset": "assets/images/tshirt-orlando-pirates-front.jpg",
+      "bytes": 168378,
+      "sha256": "aa5707f18d7d4b606c1de8803e99f8a5c544657dff475322cd244dd752de45d5"
+    },
+    {
+      "public_asset": "assets/images/vehicle-wrap-mockup.jpg",
+      "bytes": 246898,
+      "sha256": "ec07709e99e0fb2fb296ae4ff98bb4d51cdcac6a39a46235d8b15dba951a7b5d"
+    },
+    {
+      "public_asset": "assets/images/wall-banner-quantum.jpg",
+      "bytes": 222177,
+      "sha256": "fb920c4aec318bba9089f4b4ac2e66a3d5180bee5c0c07af31bfe49fc90b7d5a"
+    },
+    {
+      "public_asset": "assets/images/whatsapp.png",
+      "bytes": 35967,
+      "sha256": "b45a1784d06cb8926e5446ef049e35d084f6feec9f8a95e45ddc096e0e306314"
+    },
+    {
+      "public_asset": "assets/images/xframe-fighter-banner.jpg",
+      "bytes": 203171,
+      "sha256": "b141c0b3aa6805e5578ccf13ab18eccdf0fef8c56c6bf7425cf0fa5069cd4c1e"
+    },
+    {
+      "public_asset": "assets/videos/branding-showcase.mp4",
+      "bytes": 11411078,
+      "sha256": "14d2a631127c96b6ea386a12c1374285a9cd00fe232c8ee5ba45920f7579149c"
+    },
+    {
+      "public_asset": "assets/videos/project-install.mp4",
+      "bytes": 5382467,
+      "sha256": "bdd27032a12d400acff63938b73ea19d73563a23be83c3b209178801d86f441e"
+    },
+    {
+      "public_asset": "assets/videos/studio-tour.mp4",
+      "bytes": 5521383,
+      "sha256": "4b671f3559aa3c75c2a8f493ea70046005416968d40c938b9bf0674636a6bdd6"
+    },
+    {
+      "public_asset": "assets/posters/poster-branding-showcase.jpg",
+      "bytes": 71812,
+      "sha256": "dc532066397fcb7a31dd4f691dd7db01c0c48e73a0598dfa2beb869eca48a3d5"
+    },
+    {
+      "public_asset": "assets/posters/poster-project-install.jpg",
+      "bytes": 81443,
+      "sha256": "b0e0f372fe9c4d6b7bf6e8d51611e2d0912033755fb99183a6618d4e2ed338f8"
+    },
+    {
+      "public_asset": "assets/posters/poster-studio-tour.jpg",
+      "bytes": 66659,
+      "sha256": "150ebd13fedce0d72ed44beecea268783ff4d4cd5684ec300f37fd1d7ca3abca"
+    }
+  ]
+}

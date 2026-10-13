@@ -1,4 +1,12 @@
 'use strict';
+const CATEGORY_LABELS = {
+  branding: 'Branding & design',
+  signage: 'Signage',
+  printing: 'T-shirt printing',
+  vehicle: 'Vehicle branding',
+  banners: 'Banners',
+  'shop-branding-signage': 'Shop branding & signage'
+};
 document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('year').textContent = new Date().getFullYear();
   const toggle = document.getElementById('mobileToggle'), nav = document.getElementById('siteNav');
@@ -14,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (form) form.addEventListener('submit', e => {
     e.preventDefault();
     const data = new FormData(form);
-    const body = `Hello Tone4DMedia,\n\nName: ${data.get('name')}\nEmail: ${data.get('email')}\nService: ${data.get('service')}\n\n${data.get('message')}`;
+    const body = `Hello Tone4DMedia,\nBusiness address: 11 Bunyan Street Benoni\n\nName: ${data.get('name')}\nEmail: ${data.get('email')}\nService: ${data.get('service')}\n\n${data.get('message')}`;
     const email = e.submitter?.value === 'email';
     const url = email ? `mailto:tone4dmedia@gmail.com?subject=${encodeURIComponent('Website enquiry: '+data.get('service'))}&body=${encodeURIComponent(body)}` : `https://wa.me/27692403008?text=${encodeURIComponent(body)}`;
     document.getElementById('formStatus').textContent = `Opening ${email ? 'your email app' : 'WhatsApp'}. Your enquiry is not sent yet; send it in that app.`;
@@ -29,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
     stopMedia(); current = (index + visible.length) % visible.length;
     const item = visible[current], element = document.createElement(item.type === 'video' ? 'video' : 'img');
     if (item.type === 'video') { element.controls = true; element.playsInline = true; element.preload = 'metadata'; element.poster = item.poster; element.setAttribute('aria-label',item.title); }
-    else element.alt = item.alt;
+    else { element.alt = item.alt; element.width = item.width; element.height = item.height; }
     element.src = item.src; media.append(element);
     document.getElementById('viewerTitle').textContent = item.title;
     document.getElementById('viewerDescription').textContent = item.description;
@@ -46,9 +54,11 @@ document.addEventListener('DOMContentLoaded', () => {
     visible = items; const target = gallery || preview; target.replaceChildren();
     items.forEach((item,index) => {
       const card = document.createElement('button'); card.type = 'button'; card.className = 'project-card'; card.setAttribute('aria-label',`View ${item.type === 'video' ? 'video: ' : ''}${item.title}`);
-      const img = document.createElement('img'); img.src = item.type === 'video' ? item.poster : item.src; img.alt = item.alt; img.loading = 'lazy'; img.width = 480; img.height = 360;
+      const img = document.createElement('img'); img.src = item.type === 'video' ? item.poster : item.src; img.alt = item.alt; img.loading = 'lazy';
+      img.width = item.type === 'video' ? item.posterWidth : item.width;
+      img.height = item.type === 'video' ? item.posterHeight : item.height;
       const body = document.createElement('span'); body.className = 'card-body';
-      const category = document.createElement('span'); category.className = 'project-category'; category.textContent = `${item.category}${item.type === 'video' ? ' · Play video ▶' : ' · View image ↗'}`;
+      const category = document.createElement('span'); category.className = 'project-category'; category.textContent = `${CATEGORY_LABELS[item.category] || item.category}${item.type === 'video' ? ' · Play video ▶' : ' · View image ↗'}`;
       const title = document.createElement('strong'); title.textContent = item.title;
       const description = document.createElement('span'); description.className = 'project-description'; description.textContent = item.description;
       body.append(category,title,description); card.append(img,body); card.addEventListener('click',() => open(index,card)); target.append(card);
@@ -56,7 +66,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const status = document.getElementById('galleryStatus'); if (status) status.textContent = `${items.length} projects shown`;
   }
   fetch('assets/metadata.json').then(res => { if (!res.ok) throw new Error('Portfolio unavailable'); return res.json(); }).then(items => {
-    if (preview) { render([14,16,17,1,25,27].map(i => items[i]).filter(Boolean)); return; }
+    if (preview) {
+      const ids = (preview.dataset.featuredIds || '').split(',').map(Number);
+      render(ids.map(id => items.find(item => item.id === id)).filter(Boolean));
+      return;
+    }
     const filters = [...document.querySelectorAll('[data-filter]')];
     function filter(category) { if (!filters.some(btn => btn.dataset.filter === category)) category = 'all'; filters.forEach(btn => btn.setAttribute('aria-pressed',String(btn.dataset.filter === category))); render(category === 'all' ? items : items.filter(item => item.category === category)); }
     filters.forEach(btn => btn.addEventListener('click',() => filter(btn.dataset.filter)));

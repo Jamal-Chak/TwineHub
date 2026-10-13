@@ -1,0 +1,950 @@
+{
+  "snapshot_date": "2026-10-13",
+  "authoritative_metadata": "assets/metadata.json",
+  "before": {
+    "images": 27,
+    "videos": 3,
+    "total": 30,
+    "by_category": {
+      "banners": 3,
+      "branding": 5,
+      "printing": 6,
+      "signage": 12,
+      "vehicle": 4
+    }
+  },
+  "after": {
+    "images": 52,
+    "videos": 3,
+    "total": 55,
+    "by_category": {
+      "banners": 10,
+      "branding": 5,
+      "printing": 8,
+      "shop-branding-signage": 6,
+      "signage": 12,
+      "vehicle": 14
+    }
+  },
+  "new_images_added": 25,
+  "new_images_by_category": {
+    "banners": 7,
+    "printing": 2,
+    "shop-branding-signage": 6,
+    "vehicle": 10
+  },
+  "exact_duplicates": 0,
+  "unprocessed": 0,
+  "source_folders": [
+    {
+      "source": "images/Banners",
+      "files": 7
+    },
+    {
+      "source": "images/Shop Branding",
+      "files": 0
+    },
+    {
+      "source": "images/Shop branding and Signage",
+      "files": 6
+    },
+    {
+      "source": "images/TShirts",
+      "files": 2
+    },
+    {
+      "source": "images/Vehicle branding",
+      "files": 10
+    }
+  ],
+  "new_images": [
+    {
+      "source": "images/Banners/IMG_20250510_095659.jpg",
+      "source_sha256": "6484094e04c3bfcf87a19bdd5ed9e2ae4fa7caab85d0a7c9e7d349ce410182dc",
+      "status": "added",
+      "public_asset": "assets/images/banners-img-20250510-095659.jpg",
+      "entry_id": 31,
+      "category": "banners",
+      "title": "Apostolic Covenant roll-up banners",
+      "description": "Two green and white Apostolic Covenant roll-up banners displayed indoors.",
+      "alt": "Two green and white Apostolic Covenant roll-up banners displayed indoors.",
+      "source_bytes": 1072856,
+      "output_bytes": 120045,
+      "width": 720,
+      "height": 1600,
+      "reason": "Visually inspected supplied photograph; category follows the owner-created source folder. No exact raw-source duplicate found."
+    },
+    {
+      "source": "images/Banners/IMG_20250709_115440.jpg",
+      "source_sha256": "f42c04b735f4ecf251b860807207acd1e7918e135460459f8251f0ee043bd286",
+      "status": "added",
+      "public_asset": "assets/images/banners-img-20250709-115440.jpg",
+      "entry_id": 32,
+      "category": "banners",
+      "title": "Day-care promotional display",
+      "description": "An All Stars Day Care promotional display with colourful illustrations attached to a metal railing.",
+      "alt": "An All Stars Day Care promotional display with colourful illustrations attached to a metal railing.",
+      "source_bytes": 1705481,
+      "output_bytes": 175856,
+      "width": 1600,
+      "height": 720,
+      "reason": "Visually inspected the supplied photograph and retained the owner Banners category; the photograph does not establish whether the display is flexible or rigid."
+    },
+    {
+      "source": "images/Banners/IMG_20251223_194243.jpg",
+      "source_sha256": "9aef4acb590af8b9b9accc43758649c48db1187f8675ccdfec3e3e846c81856b",
+      "status": "added",
+      "public_asset": "assets/images/banners-img-20251223-194243.jpg",
+      "entry_id": 33,
+      "category": "banners",
+      "title": "Go Ye roll-up banner",
+      "description": "A purple and white Go Ye roll-up banner displayed against a brick wall.",
+      "alt": "A purple and white Go Ye roll-up banner displayed against a brick wall.",
+      "source_bytes": 1177912,
+      "output_bytes": 101463,
+      "width": 720,
+      "height": 1600,
+      "reason": "Visually inspected supplied photograph; category follows the owner-created source folder. No exact raw-source duplicate found."
+    },
+    {
+      "source": "images/Banners/IMG_20260114_103248.jpg",
+      "source_sha256": "8e451fae14d2137d15af4effed887151284e13cd8f590ce2898a454a2730f830",
+      "status": "added",
+      "public_asset": "assets/images/banners-img-20260114-103248.jpg",
+      "entry_id": 34,
+      "category": "banners",
+      "title": "Community development roll-up banner",
+      "description": "A white and green community development roll-up banner displayed outside.",
+      "alt": "A white and green community development roll-up banner displayed outside.",
+      "source_bytes": 2037478,
+      "output_bytes": 182593,
+      "width": 720,
+      "height": 1600,
+      "reason": "Visually inspected supplied photograph; category follows the owner-created source folder. No exact raw-source duplicate found."
+    },
+    {
+      "source": "images/Banners/IMG_20260320_130252.jpg",
+      "source_sha256": "7db5c85e226adf2ef6d9f38f764b597f5f910c671ca1649395b4a44cd88b3e57",
+      "status": "added",
+      "public_asset": "assets/images/banners-img-20260320-130252.jpg",
+      "entry_id": 35,
+      "category": "banners",
+      "title": "Dr Mashudu roll-up banner",
+      "description": "A purple Dr Mashudu roll-up banner with medical-service information and a portrait.",
+      "alt": "A purple Dr Mashudu roll-up banner with medical-service information and a portrait.",
+      "source_bytes": 967421,
+      "output_bytes": 131301,
+      "width": 720,
+      "height": 1600,
+      "reason": "Visually inspected supplied photograph; category follows the owner-created source folder. No exact raw-source duplicate found."
+    },
+    {
+      "source": "images/Banners/IMG_20260521_205638.jpg",
+      "source_sha256": "dcfdc3d12e836cb84b9f905be9f50a7698e4f3127f0557520a98453577ce173d",
+      "status": "added",
+      "public_asset": "assets/images/banners-img-20260521-205638.jpg",
+      "entry_id": 36,
+      "category": "banners",
+      "title": "Go Ye portrait display",
+      "description": "A freestanding Go Ye display with two portraits and a dark patterned background.",
+      "alt": "A freestanding Go Ye display with two portraits and a dark patterned background.",
+      "source_bytes": 1747325,
+      "output_bytes": 173632,
+      "width": 1200,
+      "height": 1600,
+      "reason": "Visually inspected supplied photograph; category follows the owner-created source folder. No exact raw-source duplicate found."
+    },
+    {
+      "source": "images/Banners/IMG_20260707_234004.jpg",
+      "source_sha256": "07c4c0b48896cb35f0baf938f09f56aff8dc5cf7c2c7544c4c159e7621334801",
+      "status": "added",
+      "public_asset": "assets/images/banners-img-20260707-234004.jpg",
+      "entry_id": 37,
+      "category": "banners",
+      "title": "Legal services roll-up banner",
+      "description": "A white, navy and gold roll-up banner listing legal services.",
+      "alt": "A white, navy and gold roll-up banner listing legal services.",
+      "source_bytes": 1523606,
+      "output_bytes": 127108,
+      "width": 1200,
+      "height": 1600,
+      "reason": "Visually inspected supplied photograph; category follows the owner-created source folder. No exact raw-source duplicate found."
+    },
+    {
+      "source": "images/Shop branding and Signage/IMG_20260703_121650.jpg",
+      "source_sha256": "bec2470bc6ba284bc9bb7f2eed4dcbe651cf61940d75311db502747c144e183b",
+      "status": "added",
+      "public_asset": "assets/images/shop-branding-and-signage-img-20260703-121650.jpg",
+      "entry_id": 38,
+      "category": "shop-branding-signage",
+      "title": "Surgery sign installation detail",
+      "description": "A close-up of large blue surgery lettering being positioned above the street.",
+      "alt": "A close-up of large blue surgery lettering being positioned above the street.",
+      "source_bytes": 2198212,
+      "output_bytes": 242738,
+      "width": 1200,
+      "height": 1600,
+      "reason": "Visually inspected supplied photograph; category follows the owner-created source folder. No exact raw-source duplicate found."
+    },
+    {
+      "source": "images/Shop branding and Signage/IMG_20260703_135206.jpg",
+      "source_sha256": "01bc0453c5f42af172ee596c4fd8f2e7a5f36619100157b9db881217832ba457",
+      "status": "added",
+      "public_asset": "assets/images/shop-branding-and-signage-img-20260703-135206.jpg",
+      "entry_id": 39,
+      "category": "shop-branding-signage",
+      "title": "Surgery storefront signage",
+      "description": "Surgery and doctor lettering above a shopfront with printed window graphics.",
+      "alt": "Surgery and doctor lettering above a shopfront with printed window graphics.",
+      "source_bytes": 2644783,
+      "output_bytes": 317285,
+      "width": 1600,
+      "height": 1200,
+      "reason": "Visually inspected supplied photograph; category follows the owner-created source folder. No exact raw-source duplicate found."
+    },
+    {
+      "source": "images/Shop branding and Signage/IMG_20260910_100440.jpg",
+      "source_sha256": "8f042b50015bd41f50980831e4eadbe9c33a5654dade3173b009e6911279a1e3",
+      "status": "added",
+      "public_asset": "assets/images/shop-branding-and-signage-img-20260910-100440.jpg",
+      "entry_id": 40,
+      "category": "shop-branding-signage",
+      "title": "Medical exterior signs",
+      "description": "Eye Doctor and physiotherapy signs mounted on the exterior of a brick building.",
+      "alt": "Eye Doctor and physiotherapy signs mounted on the exterior of a brick building.",
+      "source_bytes": 2171671,
+      "output_bytes": 222464,
+      "width": 1200,
+      "height": 1600,
+      "reason": "Visually inspected supplied photograph; category follows the owner-created source folder. No exact raw-source duplicate found."
+    },
+    {
+      "source": "images/Shop branding and Signage/IMG_20260911_131413.jpg",
+      "source_sha256": "bd204d5006e652010d06b5b16fe852cdc8441df1ef74a47d43608fba9842779c",
+      "status": "added",
+      "public_asset": "assets/images/shop-branding-and-signage-img-20260911-131413.jpg",
+      "entry_id": 41,
+      "category": "shop-branding-signage",
+      "title": "Hair and beauty shopfront",
+      "description": "Hair and beauty signage and portrait graphics across a shopfront and windows.",
+      "alt": "Hair and beauty signage and portrait graphics across a shopfront and windows.",
+      "source_bytes": 3112260,
+      "output_bytes": 389766,
+      "width": 1600,
+      "height": 1200,
+      "reason": "Visually inspected supplied photograph; category follows the owner-created source folder. No exact raw-source duplicate found."
+    },
+    {
+      "source": "images/Shop branding and Signage/IMG_20260917_092131.jpg",
+      "source_sha256": "723e84282601c6b5194a35e6371138d1796db4d1203bf02cf4eb8569ede273fa",
+      "status": "added",
+      "public_asset": "assets/images/shop-branding-and-signage-img-20260917-092131.jpg",
+      "entry_id": 42,
+      "category": "shop-branding-signage",
+      "title": "Entrance address lettering",
+      "description": "Black number and street-name lettering above a garage entrance.",
+      "alt": "Black number and street-name lettering above a garage entrance.",
+      "source_bytes": 4289182,
+      "output_bytes": 367763,
+      "width": 1600,
+      "height": 1200,
+      "reason": "Visually inspected supplied photograph; category follows the owner-created source folder. No exact raw-source duplicate found."
+    },
+    {
+      "source": "images/Shop branding and Signage/IMG_20260918_122220.jpg",
+      "source_sha256": "b9bdad1c06fe75106fd1c6031c8d030f3ed5b53c61551dca1934da8a9b6e7065",
+      "status": "added",
+      "public_asset": "assets/images/shop-branding-and-signage-img-20260918-122220.jpg",
+      "entry_id": 43,
+      "category": "shop-branding-signage",
+      "title": "Auto-repair frontage signs",
+      "description": "Auto-repair signage on a brick workshop frontage and metal gate.",
+      "alt": "Auto-repair signage on a brick workshop frontage and metal gate.",
+      "source_bytes": 3140961,
+      "output_bytes": 336086,
+      "width": 1600,
+      "height": 1200,
+      "reason": "Visually inspected supplied photograph; category follows the owner-created source folder. No exact raw-source duplicate found."
+    },
+    {
+      "source": "images/TShirts/c8148203ef13a05cde28b35b7fb1ce8d_0.jpeg",
+      "source_sha256": "2e06f9f4dbc4e6b0216cd7b2dfb3b2a299ba5014a13c4dc56d8d990b0c1a8b2c",
+      "status": "added",
+      "public_asset": "assets/images/tshirts-c8148203ef13a05cde28b35b7fb1ce8d-0.jpg",
+      "entry_id": 44,
+      "category": "printing",
+      "title": "Printed slogan T-shirts",
+      "description": "A selection of olive, black, tan and red T-shirts with printed text and emblems.",
+      "alt": "A selection of olive, black, tan and red T-shirts with printed text and emblems.",
+      "source_bytes": 168512,
+      "output_bytes": 102951,
+      "width": 900,
+      "height": 1600,
+      "reason": "Visually inspected supplied photograph; category follows the owner-created source folder. No exact raw-source duplicate found."
+    },
+    {
+      "source": "images/TShirts/IMG_20260912_173514.jpg",
+      "source_sha256": "2901d1be0e1502c9bb50e179ab569b5daf26bb574795dcbb2fb2042e63e52271",
+      "status": "added",
+      "public_asset": "assets/images/tshirts-img-20260912-173514.jpg",
+      "entry_id": 45,
+      "category": "printing",
+      "title": "Primeview branded shirts",
+      "description": "Two black shirts with large and small Primeview logo designs.",
+      "alt": "Two black shirts with large and small Primeview logo designs.",
+      "source_bytes": 1534146,
+      "output_bytes": 105894,
+      "width": 1600,
+      "height": 1200,
+      "reason": "Visually inspected supplied photograph; category follows the owner-created source folder. No exact raw-source duplicate found."
+    },
+    {
+      "source": "images/Vehicle branding/IMG_20250920_160015.jpg",
+      "source_sha256": "22600246229202951dd3426f464f16ec87a785ccbb6c30238a100bb2a0eafd84",
+      "status": "added",
+      "public_asset": "assets/images/vehicle-branding-img-20250920-160015.jpg",
+      "entry_id": 46,
+      "category": "vehicle",
+      "title": "Apostolic Covenant car branding",
+      "description": "Green and white Apostolic Covenant lettering and an emblem on a silver car.",
+      "alt": "Green and white Apostolic Covenant lettering and an emblem on a silver car.",
+      "source_bytes": 1349282,
+      "output_bytes": 131593,
+      "width": 1600,
+      "height": 720,
+      "reason": "Visually inspected supplied photograph; category follows the owner-created source folder. No exact raw-source duplicate found."
+    },
+    {
+      "source": "images/Vehicle branding/IMG_20260227_193737.jpg",
+      "source_sha256": "1e1bb1b805d26c8121f9ea1fe32b3718e82772f05e7bc1c81da38990ca89fa35",
+      "status": "added",
+      "public_asset": "assets/images/vehicle-branding-img-20260227-193737.jpg",
+      "entry_id": 47,
+      "category": "vehicle",
+      "title": "Pro-Tech pickup rear graphics",
+      "description": "The rear of a white Pro-Tech pickup with blue graphics and business lettering.",
+      "alt": "The rear of a white Pro-Tech pickup with blue graphics and business lettering.",
+      "source_bytes": 1141864,
+      "output_bytes": 115930,
+      "width": 1600,
+      "height": 720,
+      "reason": "Visually inspected supplied photograph; category follows the owner-created source folder. No exact raw-source duplicate found."
+    },
+    {
+      "source": "images/Vehicle branding/IMG_20260227_193750.jpg",
+      "source_sha256": "f48a4a0c74a3b2cf7e4eb6fe7e136788dc4ef04418fa20b478944d1e85bdcfbd",
+      "status": "added",
+      "public_asset": "assets/images/vehicle-branding-img-20260227-193750.jpg",
+      "entry_id": 48,
+      "category": "vehicle",
+      "title": "Pro-Tech pickup side graphics",
+      "description": "A rear-side view of a white Pro-Tech pickup with blue graphics and business lettering.",
+      "alt": "A rear-side view of a white Pro-Tech pickup with blue graphics and business lettering.",
+      "source_bytes": 974821,
+      "output_bytes": 100566,
+      "width": 1600,
+      "height": 720,
+      "reason": "Visually inspected supplied photograph; category follows the owner-created source folder. No exact raw-source duplicate found."
+    },
+    {
+      "source": "images/Vehicle branding/IMG_20260227_193805.jpg",
+      "source_sha256": "595486f6727c849dacab34d5652853ab20620fd86ddbca1d574acdfd751ed7f5",
+      "status": "added",
+      "public_asset": "assets/images/vehicle-branding-img-20260227-193805.jpg",
+      "entry_id": 49,
+      "category": "vehicle",
+      "title": "Pro-Tech pickup front-side view",
+      "description": "A front-side view of a white Pro-Tech pickup with business lettering on the doors.",
+      "alt": "A front-side view of a white Pro-Tech pickup with business lettering on the doors.",
+      "source_bytes": 936815,
+      "output_bytes": 99116,
+      "width": 1600,
+      "height": 720,
+      "reason": "Visually inspected supplied photograph; category follows the owner-created source folder. No exact raw-source duplicate found."
+    },
+    {
+      "source": "images/Vehicle branding/IMG_20260606_121807.jpg",
+      "source_sha256": "fd21a9f010ecf531437dff5d43a874fcb40b61917da5e08ee0431a7440e4ca37",
+      "status": "added",
+      "public_asset": "assets/images/vehicle-branding-img-20260606-121807.jpg",
+      "entry_id": 50,
+      "category": "vehicle",
+      "title": "Jozi Towing truck side branding",
+      "description": "Red, black and white Jozi Towing graphics along the side of a tow truck.",
+      "alt": "Red, black and white Jozi Towing graphics along the side of a tow truck.",
+      "source_bytes": 1464839,
+      "output_bytes": 152704,
+      "width": 1600,
+      "height": 1200,
+      "reason": "Visually inspected supplied photograph; category follows the owner-created source folder. No exact raw-source duplicate found."
+    },
+    {
+      "source": "images/Vehicle branding/IMG_20260607_152419.jpg",
+      "source_sha256": "b942607187ac4ac2e8dbd0d457559d4b0771719e0d91fdeaa591fd272e6bed84",
+      "status": "added",
+      "public_asset": "assets/images/vehicle-branding-img-20260607-152419.jpg",
+      "entry_id": 51,
+      "category": "vehicle",
+      "title": "SKT Towing truck front graphics",
+      "description": "A front view of a purple truck with SKT Towing lettering above the windscreen.",
+      "alt": "A front view of a purple truck with SKT Towing lettering above the windscreen.",
+      "source_bytes": 2202949,
+      "output_bytes": 224476,
+      "width": 1200,
+      "height": 1600,
+      "reason": "Visually inspected supplied photograph; category follows the owner-created source folder. No exact raw-source duplicate found."
+    },
+    {
+      "source": "images/Vehicle branding/IMG_20260607_152444.jpg",
+      "source_sha256": "06e29c49da58e14b8590ac79869d19c3d385f20324039f1901ce9968b38f8212",
+      "status": "added",
+      "public_asset": "assets/images/vehicle-branding-img-20260607-152444.jpg",
+      "entry_id": 52,
+      "category": "vehicle",
+      "title": "SKT Towing cab side graphics",
+      "description": "A side view of a purple truck cab with SKT Towing lettering and illustrated graphics.",
+      "alt": "A side view of a purple truck cab with SKT Towing lettering and illustrated graphics.",
+      "source_bytes": 2066397,
+      "output_bytes": 212170,
+      "width": 1200,
+      "height": 1600,
+      "reason": "Visually inspected supplied photograph; category follows the owner-created source folder. No exact raw-source duplicate found."
+    },
+    {
+      "source": "images/Vehicle branding/IMG_20260708_193418.jpg",
+      "source_sha256": "08a4ca5f3b57f5b66fbcea002882abf03d118e4fd8d260b1dccfd876c2ba43db",
+      "status": "added",
+      "public_asset": "assets/images/vehicle-branding-img-20260708-193418.jpg",
+      "entry_id": 53,
+      "category": "vehicle",
+      "title": "Thandindlela coach side lettering",
+      "description": "A side view of a white coach with blue Thandindlela Coaches lettering and star graphics.",
+      "alt": "A side view of a white coach with blue Thandindlela Coaches lettering and star graphics.",
+      "source_bytes": 1711459,
+      "output_bytes": 158152,
+      "width": 1600,
+      "height": 1200,
+      "reason": "Visually inspected supplied photograph; category follows the owner-created source folder. No exact raw-source duplicate found."
+    },
+    {
+      "source": "images/Vehicle branding/IMG_20260709_153849.jpg",
+      "source_sha256": "8591fc6aef68b056d38147ec96b31c1963b51d16605e6b00f2a56ad3802edfed",
+      "status": "added",
+      "public_asset": "assets/images/vehicle-branding-img-20260709-153849.jpg",
+      "entry_id": 54,
+      "category": "vehicle",
+      "title": "Coach branding in progress",
+      "description": "A front view of a coach with a worker above the windscreen and blue coach lettering.",
+      "alt": "A front view of a coach with a worker above the windscreen and blue coach lettering.",
+      "source_bytes": 1398050,
+      "output_bytes": 145356,
+      "width": 1200,
+      "height": 1600,
+      "reason": "Visually inspected supplied photograph; category follows the owner-created source folder. No exact raw-source duplicate found."
+    },
+    {
+      "source": "images/Vehicle branding/IMG_20260710_151159.jpg",
+      "source_sha256": "2d9aeea8c649da447bd88716956f2ce71d7b2849685b1b8a69340a38f2978e26",
+      "status": "added",
+      "public_asset": "assets/images/vehicle-branding-img-20260710-151159.jpg",
+      "entry_id": 55,
+      "category": "vehicle",
+      "title": "SKT Towing pickup side graphics",
+      "description": "A side view of a blue pickup with white SKT Towing and Recovery lettering.",
+      "alt": "A side view of a blue pickup with white SKT Towing and Recovery lettering.",
+      "source_bytes": 2402285,
+      "output_bytes": 266846,
+      "width": 1600,
+      "height": 1200,
+      "reason": "Visually inspected supplied photograph; category follows the owner-created source folder. No exact raw-source duplicate found."
+    }
+  ],
+  "existing_corrections": [
+    {
+      "id": 1,
+      "src": "assets/images/image1.jpg",
+      "before": {
+        "title": "Brand identity concepts",
+        "category": "branding",
+        "description": "Illustrated overview of brand identity",
+        "alt": "Illustrated overview of brand identity"
+      },
+      "after": {
+        "title": "Brand identity illustration",
+        "category": "branding",
+        "description": "An illustration connecting brand identity with design, marketing, value and trust.",
+        "alt": "An illustration connecting brand identity with design, marketing, value and trust."
+      },
+      "reason": "Visually inspected the complete published image; corrected the description to visible content and distinguished artwork or mockups from photographs."
+    },
+    {
+      "id": 2,
+      "src": "assets/images/image2.jpg",
+      "before": {
+        "title": "PM Motorcycles signboard",
+        "category": "signage",
+        "description": "PM Motorcycles printed signboard",
+        "alt": "PM Motorcycles printed signboard"
+      },
+      "after": {
+        "title": "PM Motorcycles signboard",
+        "category": "signage",
+        "description": "PM Motorcycles business sign mounted on a wall.",
+        "alt": "PM Motorcycles business sign mounted on a wall."
+      },
+      "reason": "Visually inspected the complete published image; corrected the description to visible content and distinguished artwork or mockups from photographs."
+    },
+    {
+      "id": 3,
+      "src": "assets/images/image3.jpg",
+      "before": {
+        "title": "Street Art Vibes apparel design",
+        "category": "printing",
+        "description": "Colourful artwork on a black T-shirt",
+        "alt": "Colourful artwork on a black T-shirt"
+      },
+      "after": {
+        "title": "Street Art Vibes T-shirt mockup",
+        "category": "printing",
+        "description": "A mockup of colourful Street Art Vibes artwork on a black T-shirt, shown beside the artwork.",
+        "alt": "A mockup of colourful Street Art Vibes artwork on a black T-shirt, shown beside the artwork."
+      },
+      "reason": "Visually inspected the complete published image; corrected the description to visible content and distinguished artwork or mockups from photographs."
+    },
+    {
+      "id": 4,
+      "src": "assets/images/image4.jpg",
+      "before": {
+        "title": "Branded delivery truck",
+        "category": "vehicle",
+        "description": "Delivery truck with full side branding",
+        "alt": "Delivery truck with full side branding"
+      },
+      "after": {
+        "title": "Transzambezi delivery truck branding",
+        "category": "vehicle",
+        "description": "Transzambezi Energy graphics on the side and cab of a white delivery truck.",
+        "alt": "Transzambezi Energy graphics on the side and cab of a white delivery truck."
+      },
+      "reason": "Visually inspected the complete published image; corrected the description to visible content and distinguished artwork or mockups from photographs."
+    },
+    {
+      "id": 5,
+      "src": "assets/images/image5.jpg",
+      "before": {
+        "title": "Event pull-up banners",
+        "category": "banners",
+        "description": "Three printed pull-up banners",
+        "alt": "Three printed pull-up banners"
+      },
+      "after": {
+        "title": "Event roll-up banners",
+        "category": "banners",
+        "description": "Four purple and white roll-up banners displayed together indoors.",
+        "alt": "Four purple and white roll-up banners displayed together indoors."
+      },
+      "reason": "Visually inspected the complete published image; corrected the description to visible content and distinguished artwork or mockups from photographs."
+    },
+    {
+      "id": 6,
+      "src": "assets/images/image6.jpg",
+      "before": {
+        "title": "Logo design collection",
+        "category": "branding",
+        "description": "Collection of colourful logo concepts",
+        "alt": "Collection of colourful logo concepts"
+      },
+      "after": {
+        "title": "Vintage-style logo artwork",
+        "category": "branding",
+        "description": "A collection of vintage-style logos and sign designs presented as artwork.",
+        "alt": "A collection of vintage-style logos and sign designs presented as artwork."
+      },
+      "reason": "Visually inspected the complete published image; corrected the description to visible content and distinguished artwork or mockups from photographs."
+    },
+    {
+      "id": 7,
+      "src": "assets/images/image8.jpg",
+      "before": {
+        "title": "Printed red T-shirt",
+        "category": "printing",
+        "description": "Red T-shirt at a printing workstation",
+        "alt": "Red T-shirt at a printing workstation"
+      },
+      "after": {
+        "title": "Printed red T-shirt",
+        "category": "printing",
+        "description": "A red T-shirt with a circular printed emblem positioned at a printing workstation.",
+        "alt": "A red T-shirt with a circular printed emblem positioned at a printing workstation."
+      },
+      "reason": "Visually inspected the complete published image; corrected the description to visible content and distinguished artwork or mockups from photographs."
+    },
+    {
+      "id": 8,
+      "src": "assets/images/image9.jpg",
+      "before": {
+        "title": "Automotive logo concept",
+        "category": "branding",
+        "description": "Red and white automotive logo concept",
+        "alt": "Red and white automotive logo concept"
+      },
+      "after": {
+        "title": "Automotive logo artwork",
+        "category": "branding",
+        "description": "Red and white automotive logo artwork on a black background.",
+        "alt": "Red and white automotive logo artwork on a black background."
+      },
+      "reason": "Visually inspected the complete published image; corrected the description to visible content and distinguished artwork or mockups from photographs."
+    },
+    {
+      "id": 9,
+      "src": "assets/images/image10.jpg",
+      "before": {
+        "title": "Shopfront display",
+        "category": "signage",
+        "description": "Printed shopfront and window display",
+        "alt": "Printed shopfront and window display"
+      },
+      "after": {
+        "title": "Product display roll-up banners",
+        "category": "banners",
+        "description": "Two roll-up banners showing security products and business information.",
+        "alt": "Two roll-up banners showing security products and business information."
+      },
+      "reason": "Visually inspected the complete published image; corrected the description to visible content and distinguished artwork or mockups from photographs."
+    },
+    {
+      "id": 10,
+      "src": "assets/images/image11.jpg",
+      "before": {
+        "title": "Stationery design",
+        "category": "branding",
+        "description": "Coordinated stationery design presentation",
+        "alt": "Coordinated stationery design presentation"
+      },
+      "after": {
+        "title": "Stationery branding mockup",
+        "category": "branding",
+        "description": "A mockup of coordinated stationery, including letterheads, envelopes and business cards.",
+        "alt": "A mockup of coordinated stationery, including letterheads, envelopes and business cards."
+      },
+      "reason": "Visually inspected the complete published image; corrected the description to visible content and distinguished artwork or mockups from photographs."
+    },
+    {
+      "id": 11,
+      "src": "assets/images/image12.jpg",
+      "before": {
+        "title": "Window graphics",
+        "category": "signage",
+        "description": "Printed graphics installed on a window",
+        "alt": "Printed graphics installed on a window"
+      },
+      "after": {
+        "title": "Window graphics",
+        "category": "signage",
+        "description": "Printed business information and logo graphics displayed on a window.",
+        "alt": "Printed business information and logo graphics displayed on a window."
+      },
+      "reason": "Visually inspected the complete published image; corrected the description to visible content and distinguished artwork or mockups from photographs."
+    },
+    {
+      "id": 12,
+      "src": "assets/images/image13.jpg",
+      "before": {
+        "title": "Saved by Grace apparel",
+        "category": "printing",
+        "description": "Printed Saved by Grace T-shirt",
+        "alt": "Printed Saved by Grace T-shirt"
+      },
+      "after": {
+        "title": "Saved by Grace printed T-shirt",
+        "category": "printing",
+        "description": "A pink T-shirt printed with the words Saved by Grace.",
+        "alt": "A pink T-shirt printed with the words Saved by Grace."
+      },
+      "reason": "Visually inspected the complete published image; corrected the description to visible content and distinguished artwork or mockups from photographs."
+    },
+    {
+      "id": 13,
+      "src": "assets/images/image14.jpg",
+      "before": {
+        "title": "Branded pickup",
+        "category": "vehicle",
+        "description": "White pickup with business decals",
+        "alt": "White pickup with business decals"
+      },
+      "after": {
+        "title": "GB Tyres pickup branding",
+        "category": "vehicle",
+        "description": "GB Tyres lettering and logo graphics on a white pickup.",
+        "alt": "GB Tyres lettering and logo graphics on a white pickup."
+      },
+      "reason": "Visually inspected the complete published image; corrected the description to visible content and distinguished artwork or mockups from photographs."
+    },
+    {
+      "id": 14,
+      "src": "assets/images/tshirt-orlando-pirates-front.jpg",
+      "before": {
+        "title": "Display banners in production",
+        "category": "banners",
+        "description": "Printed display banners in the workshop",
+        "alt": "Printed display banners in the workshop"
+      },
+      "after": {
+        "title": "Easel-mounted event displays",
+        "category": "banners",
+        "description": "Two printed event displays on easels inside the workshop.",
+        "alt": "Two printed event displays on easels inside the workshop."
+      },
+      "reason": "Visually inspected the complete published image; corrected the description to visible content and distinguished artwork or mockups from photographs."
+    },
+    {
+      "id": 15,
+      "src": "assets/images/tee-proud-buccaneer-back.jpg",
+      "before": {
+        "title": "Orlando Pirates printed shirt",
+        "category": "printing",
+        "description": "Orlando Pirates design printed on a black shirt",
+        "alt": "Orlando Pirates design printed on a black shirt"
+      },
+      "after": {
+        "title": "Orlando Pirates printed shirt",
+        "category": "printing",
+        "description": "A black shirt printed with white Orlando Pirates lettering, held up for display.",
+        "alt": "A black shirt printed with white Orlando Pirates lettering, held up for display."
+      },
+      "reason": "Visually inspected the complete published image; corrected the description to visible content and distinguished artwork or mockups from photographs."
+    },
+    {
+      "id": 16,
+      "src": "assets/images/brand-wall-showroom.jpg",
+      "before": {
+        "title": "Proud Buccaneer shirt",
+        "category": "printing",
+        "description": "Proud Buccaneer text printed on a white shirt",
+        "alt": "Proud Buccaneer text printed on a white shirt"
+      },
+      "after": {
+        "title": "Proud Buccaneer printed shirt",
+        "category": "printing",
+        "description": "A white shirt printed with Proud Buccaneer lettering, numbers and an emblem.",
+        "alt": "A white shirt printed with Proud Buccaneer lettering, numbers and an emblem."
+      },
+      "reason": "Visually inspected the complete published image; corrected the description to visible content and distinguished artwork or mockups from photographs."
+    },
+    {
+      "id": 17,
+      "src": "assets/images/wall-banner-quantum.jpg",
+      "before": {
+        "title": "Outdoor business sign",
+        "category": "signage",
+        "description": "Printed business sign mounted outside",
+        "alt": "Printed business sign mounted outside"
+      },
+      "after": {
+        "title": "Medical centre roadside sign",
+        "category": "signage",
+        "description": "A medical centre sign displayed on two posts beside a road.",
+        "alt": "A medical centre sign displayed on two posts beside a road."
+      },
+      "reason": "Visually inspected the complete published image; corrected the description to visible content and distinguished artwork or mockups from photographs."
+    },
+    {
+      "id": 18,
+      "src": "assets/images/branded-gazebo-event.jpg",
+      "before": {
+        "title": "Tow truck branding",
+        "category": "vehicle",
+        "description": "Tow truck with colourful business branding",
+        "alt": "Tow truck with colourful business branding"
+      },
+      "after": {
+        "title": "Jozi Towing truck branding",
+        "category": "vehicle",
+        "description": "Jozi Towing lettering and red, black and white graphics along a white tow truck.",
+        "alt": "Jozi Towing lettering and red, black and white graphics along a white tow truck."
+      },
+      "reason": "Visually inspected the complete published image; corrected the description to visible content and distinguished artwork or mockups from photographs."
+    },
+    {
+      "id": 19,
+      "src": "assets/images/pullup-hollywood-signage.jpg",
+      "before": {
+        "title": "Shopfront window graphics",
+        "category": "signage",
+        "description": "Printed signage and window graphics on a shopfront",
+        "alt": "Printed signage and window graphics on a shopfront"
+      },
+      "after": {
+        "title": "Medical centre window graphics",
+        "category": "signage",
+        "description": "Printed medical-service information and logo graphics on a shopfront window.",
+        "alt": "Printed medical-service information and logo graphics on a shopfront window."
+      },
+      "reason": "Visually inspected the complete published image; corrected the description to visible content and distinguished artwork or mockups from photographs."
+    },
+    {
+      "id": 20,
+      "src": "assets/images/branded-gazebo-fnb.jpg",
+      "before": {
+        "title": "Pavement sign",
+        "category": "signage",
+        "description": "Freestanding business sign beside a pavement",
+        "alt": "Freestanding business sign beside a pavement"
+      },
+      "after": {
+        "title": "Surgery roadside sign",
+        "category": "signage",
+        "description": "A tall Dr Mashudu and Medical Partners Surgery sign beside a road.",
+        "alt": "A tall Dr Mashudu and Medical Partners Surgery sign beside a road."
+      },
+      "reason": "Visually inspected the complete published image; corrected the description to visible content and distinguished artwork or mockups from photographs."
+    },
+    {
+      "id": 21,
+      "src": "assets/images/brand-wall-studio.jpg",
+      "before": {
+        "title": "Printed shopfront display",
+        "category": "signage",
+        "description": "Printed display installed on a brick shopfront",
+        "alt": "Printed display installed on a brick shopfront"
+      },
+      "after": {
+        "title": "Eye Doctor shopfront graphics",
+        "category": "signage",
+        "description": "Eye Doctor lettering and service information on a glass shopfront.",
+        "alt": "Eye Doctor lettering and service information on a glass shopfront."
+      },
+      "reason": "Visually inspected the complete published image; corrected the description to visible content and distinguished artwork or mockups from photographs."
+    },
+    {
+      "id": 22,
+      "src": "assets/images/xframe-fighter-banner.jpg",
+      "before": {
+        "title": "Eye Doctor exterior banner",
+        "category": "banners",
+        "description": "Eye Doctor banner installed on an exterior wall",
+        "alt": "Eye Doctor banner installed on an exterior wall"
+      },
+      "after": {
+        "title": "Eye Doctor exterior sign",
+        "category": "signage",
+        "description": "A blue Eye Doctor Optometrist sign mounted on a dark exterior wall.",
+        "alt": "A blue Eye Doctor Optometrist sign mounted on a dark exterior wall."
+      },
+      "reason": "Visually inspected the complete published image; corrected the description to visible content and distinguished artwork or mockups from photographs."
+    },
+    {
+      "id": 23,
+      "src": "assets/images/signage-wall-interior.jpg",
+      "before": {
+        "title": "Eye Doctor pavement sign",
+        "category": "signage",
+        "description": "Eye Doctor circular pavement sign",
+        "alt": "Eye Doctor circular pavement sign"
+      },
+      "after": {
+        "title": "Eye Doctor pavement sign",
+        "category": "signage",
+        "description": "A circular Eye Doctor promotional sign displayed in a freestanding pavement frame.",
+        "alt": "A circular Eye Doctor promotional sign displayed in a freestanding pavement frame."
+      },
+      "reason": "Visually inspected the complete published image; corrected the description to visible content and distinguished artwork or mockups from photographs."
+    },
+    {
+      "id": 24,
+      "src": "assets/images/signage-installation.jpg",
+      "before": {
+        "title": "Shopfront signage installation",
+        "category": "signage",
+        "description": "Shopfront with printed signage and window graphics",
+        "alt": "Shopfront with printed signage and window graphics"
+      },
+      "after": {
+        "title": "Eye Doctor shopfront and display",
+        "category": "signage",
+        "description": "Eye Doctor shopfront lettering and window graphics with a circular promotional display.",
+        "alt": "Eye Doctor shopfront lettering and window graphics with a circular promotional display."
+      },
+      "reason": "Visually inspected the complete published image; corrected the description to visible content and distinguished artwork or mockups from photographs."
+    },
+    {
+      "id": 25,
+      "src": "assets/images/branding-mockup-flyer.jpg",
+      "before": {
+        "title": "Branding services artwork",
+        "category": "branding",
+        "description": "Tone4DMedia promotional branding artwork",
+        "alt": "Tone4DMedia promotional branding artwork"
+      },
+      "after": {
+        "title": "Branding services promotional artwork",
+        "category": "branding",
+        "description": "Tone4DMedia promotional artwork with illustrated examples of branded apparel and display products.",
+        "alt": "Tone4DMedia promotional artwork with illustrated examples of branded apparel and display products."
+      },
+      "reason": "Visually inspected the complete published image; corrected the description to visible content and distinguished artwork or mockups from photographs."
+    },
+    {
+      "id": 26,
+      "src": "assets/images/vehicle-wrap-mockup.jpg",
+      "before": {
+        "title": "Vehicle branding artwork",
+        "category": "vehicle",
+        "description": "Tone4DMedia promotional vehicle branding artwork",
+        "alt": "Tone4DMedia promotional vehicle branding artwork"
+      },
+      "after": {
+        "title": "Vehicle branding promotional mockups",
+        "category": "vehicle",
+        "description": "Tone4DMedia promotional artwork showing vehicle branding mockups.",
+        "alt": "Tone4DMedia promotional artwork showing vehicle branding mockups."
+      },
+      "reason": "Visually inspected the complete published image; corrected the description to visible content and distinguished artwork or mockups from photographs."
+    },
+    {
+      "id": 27,
+      "src": "assets/images/apparel-tshirt-mockup.jpg",
+      "before": {
+        "title": "T-shirt printing artwork",
+        "category": "printing",
+        "description": "Tone4DMedia promotional T-shirt printing artwork",
+        "alt": "Tone4DMedia promotional T-shirt printing artwork"
+      },
+      "after": {
+        "title": "T-shirt printing promotional artwork",
+        "category": "printing",
+        "description": "Tone4DMedia promotional artwork showing T-shirt and accessory branding mockups.",
+        "alt": "Tone4DMedia promotional artwork showing T-shirt and accessory branding mockups."
+      },
+      "reason": "Visually inspected the complete published image; corrected the description to visible content and distinguished artwork or mockups from photographs."
+    }
+  ],
+  "uncertainties": [
+    "The separate images/Shop Branding folder is empty. All six supplied shop photos are in images/Shop branding and Signage, so they use the combined shop-branding-signage category. The older signage and branding categories remain available.",
+    "images/Banners/IMG_20250709_115440.jpg shows a day-care promotional display attached to a railing. Its flexible or rigid construction cannot be determined from the photograph; the owner Banners category is retained with neutral wording."
+  ],
+  "preservation": "All 30 pre-update portfolio IDs, src references, video files and poster files are preserved byte-for-byte. Existing public images were not reoptimized. Original images and gallery sources, including historically excluded files, were not changed.",
+  "deduplication": "SHA256 comparison of raw source bytes, covering existing media-audit.json sources, every new source file, and all41 other historical/source files in images/ and gallery/. Different views were preserved as separate items; no exact duplicate was found.",
+  "optimization": {
+    "max_edge": 1600,
+    "jpeg_quality": 72,
+    "progressive": true,
+    "orientation_corrected": true,
+    "exif_stripped": true,
+    "source_bytes": 45140567,
+    "public_bytes": 4703854
+  },
+  "verification": {
+    "new_images_decoded": 25,
+    "new_images_max_edge_at_most_1600": true,
+    "new_images_progressive_rgb_jpeg": true,
+    "new_images_exif_free": true,
+    "new_images_aspect_ratios_preserved": "Within0.2% integer resizing tolerance against EXIF-oriented originals.",
+    "all_before_metadata_ids_and_sources_preserved": true,
+    "all_before_public_image_video_poster_hashes_preserved": true,
+    "all_source_file_hashes_preserved": true,
+    "new_exact_duplicates_against_all_historical_sources": 0,
+    "browser_checks": "Reported separately by website verification workflow."
+  }
+}

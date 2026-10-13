@@ -479,11 +479,12 @@ h2 { letter-spacing:-.035em; margin-bottom:18px; } h3 { font-size:1.35rem; margi
 .services-grid,.gallery-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; }
 .service-card,.project-card { background:var(--color-bg-card); border:1px solid var(--color-border); border-radius:12px; overflow:hidden; }
 .service-card { transition:transform .2s,border-color .2s; } .service-card:hover { transform:translateY(-4px); border-color:var(--color-primary); }
-.service-card > img { width:100%; height:220px; object-fit:cover; } .card-body { padding:24px; }
+.service-card > img { width:100%; height:260px; object-fit:contain; background:var(--color-bg-light); padding:12px; } .card-body { padding:24px; }
+.media-caption { padding:10px 24px 0; font-size:.82rem; color:var(--color-text-muted); }
 .service-icon { color:#8e90ff; display:block; font-size:1.6rem; margin-bottom:14px; } .card-body p { font-size:.96rem; margin-bottom:18px; }
 .process { background:var(--color-bg-light); } .process-grid { list-style:none; display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:28px; margin-top:35px; }
 .process-grid li > span { font-size:2.5rem; color:#9294ff; font-weight:800; display:block; border-top:1px solid #53536a; padding-top:15px; margin-bottom:18px; } .process-grid p { font-size:.96rem; }
-.about-grid { display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center; } .about-grid img { width:100%; max-height:520px; object-fit:cover; border-radius:12px; }
+.about-grid { display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center; } .about-grid img { width:100%; height:520px; object-fit:contain; border-radius:12px; background:var(--color-bg-light); }
 .values-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:20px; }
 .cta { padding:50px; background:linear-gradient(120deg,#222245,#142732); border:1px solid #454562; border-radius:16px; } .cta p { margin-bottom:24px; }
 .contact-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } .contact-form > p { font-size:.95rem; margin-bottom:24px; } .form-group:first-of-type { margin-top:24px; }
@@ -491,7 +492,7 @@ h2 { letter-spacing:-.035em; margin-bottom:18px; } h3 { font-size:1.35rem; margi
 .map { width:100%; height:360px; border:1px solid var(--color-border); border-radius:12px; margin:24px 0; }
 .footer-content { grid-template-columns:1.3fr .7fr 1.4fr 1fr; } .footer-content h4 { margin-bottom:18px; } .footer-content a { display:block; font-size:.92rem; margin-bottom:9px; overflow-wrap:anywhere; } .footer-content .active { color:white; }
 .filters { display:flex; flex-wrap:wrap; gap:10px; margin-bottom:18px; } .filter-btn { color:var(--color-text); border:1px solid #65657a; padding:10px 20px; border-radius:24px; min-height:44px; } .filter-btn[aria-pressed="true"] { background:var(--color-primary-dark); border-color:#9294ff; } #galleryStatus { margin-bottom:25px; }
-.project-card { width:100%; text-align:left; color:var(--color-text); } .project-card:hover { border-color:#9294ff; } .project-card img { width:100%; height:270px; object-fit:cover; } .project-card .card-body { display:block; } .project-card strong { display:block; font-size:1.1rem; }
+.project-card { width:100%; text-align:left; color:var(--color-text); } .project-card:hover { border-color:#9294ff; } .project-card img { width:100%; height:300px; object-fit:contain; background:var(--color-bg-light); padding:12px; } .project-card .card-body { display:block; } .project-card strong { display:block; font-size:1.1rem; }
 .project-category { display:block; color:#67dbe9; font-size:.78rem; text-transform:uppercase; letter-spacing:.08em; margin-bottom:8px; } .project-description { display:block; color:var(--color-text-muted); font-size:.9rem; margin-top:10px; } .text-link { display:inline-block; margin-top:30px; }
 dialog { margin:auto; width:min(1000px,94vw); max-height:94svh; padding:20px; border:1px solid #65657a; border-radius:12px; background:var(--color-bg-light); color:var(--color-text); overflow:auto; } dialog::backdrop { background:rgba(0,0,0,.9); }
 .viewer-toolbar { display:flex; gap:15px; align-items:center; margin-bottom:15px; } .viewer-toolbar button { color:white; font-size:1.4rem; width:44px; height:44px; border:1px solid #65657a; border-radius:6px; } #closeViewer { margin-left:auto; }

@@ -14,7 +14,9 @@ For Vercel, set the project's Root Directory to the repository root containing v
 
 The public build allowlists the five pages, CSS, JavaScript, authoritative metadata and referenced public assets. Original images/, historical gallery/, admin utilities, Python scripts and repository documents are excluded. Public logo and background copies are preserved.
 
-assets/metadata.json is the authoritative portfolio inventory, used by the website and both local inventory utilities. gallery/metadata.json is the historical inventory retained for provenance. See MEDIA_REPORT.md and media-audit.json for reconciliation and measured sizes.
+assets/metadata.json is the authoritative portfolio inventory, used by the website and both local inventory utilities. gallery/metadata.json is the historical inventory retained for provenance. See MEDIA_REPORT.md, media-update-mapping.json and media-audit.json for source-to-public mappings, categorisation and measured sizes. qa/media-before.json and qa/original-media-before.json preserve the inventory and hashes recorded before the latest import.
+
+The business address is 11 Bunyan Street Benoni. Directions use an exact-address Google Maps search, with no unverified map coordinates.
 
 There is no contact delivery backend configured. Enquiry actions prepare WhatsApp or email messages; visitors send the message in their chosen app.
 
