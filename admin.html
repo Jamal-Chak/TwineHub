@@ -27,7 +27,7 @@
       <div class="admin-header">
         <div>
           <h1>Gallery Metadata Admin</h1>
-          <div class="top-note hint">Load, edit and export <code>gallery/metadata.json</code>. No server required — download the edited JSON and replace the file in the repo.</div>
+          <div class="top-note hint">Load, edit and export <code>assets/metadata.json</code>. No server required — download the edited JSON and replace the file in the repo.</div>
         </div>
         <div class="admin-actions">
           <button id="btnLoad" class="btn btn.ghost">Reload</button>
@@ -161,7 +161,7 @@
       let items = [];
       function loadMetadata() {
         setStatus('Loading metadata.json...');
-        fetch('gallery/metadata.json')
+        fetch('assets/metadata.json')
           .then(res => {
             if (!res.ok) throw new Error('Not found');
             return res.json();
@@ -182,7 +182,7 @@
       document.getElementById('btnLoad').addEventListener('click', () => loadMetadata());
       document.getElementById('btnAdd').addEventListener('click', () => {
         const nextId = items.length ? (Math.max(...items.map(i => Number(i.id||0))) + 1) : 1;
-        items.push({ id: nextId, src: `gallery/image${nextId}.jpg`, title: `Project ${nextId}`, category: '', alt: '' });
+        items.push({ id: nextId, src: `assets/images/project-${nextId}.jpg`, title: `Project ${nextId}`, category: '', alt: '' });
         refresh(items);
       });
       document.getElementById('btnExport').addEventListener('click', () => downloadJSON(items));

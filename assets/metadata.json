@@ -1,0 +1,275 @@
+[
+  {
+    "id": 1,
+    "src": "assets/images/image1.jpg",
+    "type": "image",
+    "title": "Brand identity concepts",
+    "category": "branding",
+    "alt": "Illustrated overview of brand identity",
+    "description": "Illustrated overview of brand identity"
+  },
+  {
+    "id": 2,
+    "src": "assets/images/image2.jpg",
+    "type": "image",
+    "title": "PM Motorcycles signboard",
+    "category": "signage",
+    "alt": "PM Motorcycles printed signboard",
+    "description": "PM Motorcycles printed signboard"
+  },
+  {
+    "id": 3,
+    "src": "assets/images/image3.jpg",
+    "type": "image",
+    "title": "Street Art Vibes apparel design",
+    "category": "printing",
+    "alt": "Colourful artwork on a black T-shirt",
+    "description": "Colourful artwork on a black T-shirt"
+  },
+  {
+    "id": 4,
+    "src": "assets/images/image4.jpg",
+    "type": "image",
+    "title": "Branded delivery truck",
+    "category": "vehicle",
+    "alt": "Delivery truck with full side branding",
+    "description": "Delivery truck with full side branding"
+  },
+  {
+    "id": 5,
+    "src": "assets/images/image5.jpg",
+    "type": "image",
+    "title": "Event pull-up banners",
+    "category": "banners",
+    "alt": "Three printed pull-up banners",
+    "description": "Three printed pull-up banners"
+  },
+  {
+    "id": 6,
+    "src": "assets/images/image6.jpg",
+    "type": "image",
+    "title": "Logo design collection",
+    "category": "branding",
+    "alt": "Collection of colourful logo concepts",
+    "description": "Collection of colourful logo concepts"
+  },
+  {
+    "id": 7,
+    "src": "assets/images/image8.jpg",
+    "type": "image",
+    "title": "Printed red T-shirt",
+    "category": "printing",
+    "alt": "Red T-shirt at a printing workstation",
+    "description": "Red T-shirt at a printing workstation"
+  },
+  {
+    "id": 8,
+    "src": "assets/images/image9.jpg",
+    "type": "image",
+    "title": "Automotive logo concept",
+    "category": "branding",
+    "alt": "Red and white automotive logo concept",
+    "description": "Red and white automotive logo concept"
+  },
+  {
+    "id": 9,
+    "src": "assets/images/image10.jpg",
+    "type": "image",
+    "title": "Shopfront display",
+    "category": "signage",
+    "alt": "Printed shopfront and window display",
+    "description": "Printed shopfront and window display"
+  },
+  {
+    "id": 10,
+    "src": "assets/images/image11.jpg",
+    "type": "image",
+    "title": "Stationery design",
+    "category": "branding",
+    "alt": "Coordinated stationery design presentation",
+    "description": "Coordinated stationery design presentation"
+  },
+  {
+    "id": 11,
+    "src": "assets/images/image12.jpg",
+    "type": "image",
+    "title": "Window graphics",
+    "category": "signage",
+    "alt": "Printed graphics installed on a window",
+    "description": "Printed graphics installed on a window"
+  },
+  {
+    "id": 12,
+    "src": "assets/images/image13.jpg",
+    "type": "image",
+    "title": "Saved by Grace apparel",
+    "category": "printing",
+    "alt": "Printed Saved by Grace T-shirt",
+    "description": "Printed Saved by Grace T-shirt"
+  },
+  {
+    "id": 13,
+    "src": "assets/images/image14.jpg",
+    "type": "image",
+    "title": "Branded pickup",
+    "category": "vehicle",
+    "alt": "White pickup with business decals",
+    "description": "White pickup with business decals"
+  },
+  {
+    "id": 14,
+    "src": "assets/images/tshirt-orlando-pirates-front.jpg",
+    "type": "image",
+    "title": "Display banners in production",
+    "category": "banners",
+    "alt": "Printed display banners in the workshop",
+    "description": "Printed display banners in the workshop"
+  },
+  {
+    "id": 15,
+    "src": "assets/images/tee-proud-buccaneer-back.jpg",
+    "type": "image",
+    "title": "Orlando Pirates printed shirt",
+    "category": "printing",
+    "alt": "Orlando Pirates design printed on a black shirt",
+    "description": "Orlando Pirates design printed on a black shirt"
+  },
+  {
+    "id": 16,
+    "src": "assets/images/brand-wall-showroom.jpg",
+    "type": "image",
+    "title": "Proud Buccaneer shirt",
+    "category": "printing",
+    "alt": "Proud Buccaneer text printed on a white shirt",
+    "description": "Proud Buccaneer text printed on a white shirt"
+  },
+  {
+    "id": 17,
+    "src": "assets/images/wall-banner-quantum.jpg",
+    "type": "image",
+    "title": "Outdoor business sign",
+    "category": "signage",
+    "alt": "Printed business sign mounted outside",
+    "description": "Printed business sign mounted outside"
+  },
+  {
+    "id": 18,
+    "src": "assets/images/branded-gazebo-event.jpg",
+    "type": "image",
+    "title": "Tow truck branding",
+    "category": "vehicle",
+    "alt": "Tow truck with colourful business branding",
+    "description": "Tow truck with colourful business branding"
+  },
+  {
+    "id": 19,
+    "src": "assets/images/pullup-hollywood-signage.jpg",
+    "type": "image",
+    "title": "Shopfront window graphics",
+    "category": "signage",
+    "alt": "Printed signage and window graphics on a shopfront",
+    "description": "Printed signage and window graphics on a shopfront"
+  },
+  {
+    "id": 20,
+    "src": "assets/images/branded-gazebo-fnb.jpg",
+    "type": "image",
+    "title": "Pavement sign",
+    "category": "signage",
+    "alt": "Freestanding business sign beside a pavement",
+    "description": "Freestanding business sign beside a pavement"
+  },
+  {
+    "id": 21,
+    "src": "assets/images/brand-wall-studio.jpg",
+    "type": "image",
+    "title": "Printed shopfront display",
+    "category": "signage",
+    "alt": "Printed display installed on a brick shopfront",
+    "description": "Printed display installed on a brick shopfront"
+  },
+  {
+    "id": 22,
+    "src": "assets/images/xframe-fighter-banner.jpg",
+    "type": "image",
+    "title": "Eye Doctor exterior banner",
+    "category": "banners",
+    "alt": "Eye Doctor banner installed on an exterior wall",
+    "description": "Eye Doctor banner installed on an exterior wall"
+  },
+  {
+    "id": 23,
+    "src": "assets/images/signage-wall-interior.jpg",
+    "type": "image",
+    "title": "Eye Doctor pavement sign",
+    "category": "signage",
+    "alt": "Eye Doctor circular pavement sign",
+    "description": "Eye Doctor circular pavement sign"
+  },
+  {
+    "id": 24,
+    "src": "assets/images/signage-installation.jpg",
+    "type": "image",
+    "title": "Shopfront signage installation",
+    "category": "signage",
+    "alt": "Shopfront with printed signage and window graphics",
+    "description": "Shopfront with printed signage and window graphics"
+  },
+  {
+    "id": 25,
+    "src": "assets/images/branding-mockup-flyer.jpg",
+    "type": "image",
+    "title": "Branding services artwork",
+    "category": "branding",
+    "alt": "Tone4DMedia promotional branding artwork",
+    "description": "Tone4DMedia promotional branding artwork"
+  },
+  {
+    "id": 26,
+    "src": "assets/images/vehicle-wrap-mockup.jpg",
+    "type": "image",
+    "title": "Vehicle branding artwork",
+    "category": "vehicle",
+    "alt": "Tone4DMedia promotional vehicle branding artwork",
+    "description": "Tone4DMedia promotional vehicle branding artwork"
+  },
+  {
+    "id": 27,
+    "src": "assets/images/apparel-tshirt-mockup.jpg",
+    "type": "image",
+    "title": "T-shirt printing artwork",
+    "category": "printing",
+    "alt": "Tone4DMedia promotional T-shirt printing artwork",
+    "description": "Tone4DMedia promotional T-shirt printing artwork"
+  },
+  {
+    "id": 28,
+    "src": "assets/videos/studio-tour.mp4",
+    "type": "video",
+    "poster": "assets/posters/poster-studio-tour.jpg",
+    "title": "Outdoor signage video",
+    "category": "signage",
+    "alt": "Outdoor signage video",
+    "description": "A supplied project video showing printed signage in place."
+  },
+  {
+    "id": 29,
+    "src": "assets/videos/project-install.mp4",
+    "type": "video",
+    "poster": "assets/posters/poster-project-install.jpg",
+    "title": "Shopfront installation video",
+    "category": "signage",
+    "alt": "Shopfront installation video",
+    "description": "A supplied project video showing printed signage in place."
+  },
+  {
+    "id": 30,
+    "src": "assets/videos/branding-showcase.mp4",
+    "type": "video",
+    "poster": "assets/posters/poster-branding-showcase.jpg",
+    "title": "Printed display video",
+    "category": "signage",
+    "alt": "Printed display video",
+    "description": "A supplied project video showing printed signage in place."
+  }
+]

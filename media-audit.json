@@ -1,0 +1,299 @@
+[
+  {
+    "source": "gallery\\image1.jpg",
+    "output": "assets\\images\\image1.jpg",
+    "source_bytes": 67734,
+    "output_bytes": 60332,
+    "dimensions": [
+      900,
+      600
+    ],
+    "exif_fields": 0
+  },
+  {
+    "source": "gallery\\image2.jpg",
+    "output": "assets\\images\\image2.jpg",
+    "source_bytes": 154786,
+    "output_bytes": 152450,
+    "dimensions": [
+      1280,
+      960
+    ],
+    "exif_fields": 0
+  },
+  {
+    "source": "gallery\\image3.jpg",
+    "output": "assets\\images\\image3.jpg",
+    "source_bytes": 69999,
+    "output_bytes": 61766,
+    "dimensions": [
+      996,
+      623
+    ],
+    "exif_fields": 0
+  },
+  {
+    "source": "gallery\\image4.jpg",
+    "output": "assets\\images\\image4.jpg",
+    "source_bytes": 167748,
+    "output_bytes": 164421,
+    "dimensions": [
+      1280,
+      960
+    ],
+    "exif_fields": 0
+  },
+  {
+    "source": "gallery\\image5.jpg",
+    "output": "assets\\images\\image5.jpg",
+    "source_bytes": 138318,
+    "output_bytes": 135745,
+    "dimensions": [
+      1280,
+      960
+    ],
+    "exif_fields": 0
+  },
+  {
+    "source": "gallery\\image6.jpg",
+    "output": "assets\\images\\image6.jpg",
+    "source_bytes": 120056,
+    "output_bytes": 105993,
+    "dimensions": [
+      1199,
+      799
+    ],
+    "exif_fields": 0
+  },
+  {
+    "source": "gallery\\image8.jpg",
+    "output": "assets\\images\\image8.jpg",
+    "source_bytes": 117612,
+    "output_bytes": 115704,
+    "dimensions": [
+      960,
+      1280
+    ],
+    "exif_fields": 0
+  },
+  {
+    "source": "gallery\\image9.jpg",
+    "output": "assets\\images\\image9.jpg",
+    "source_bytes": 15290,
+    "output_bytes": 13222,
+    "dimensions": [
+      626,
+      626
+    ],
+    "exif_fields": 0
+  },
+  {
+    "source": "gallery\\image10.jpg",
+    "output": "assets\\images\\image10.jpg",
+    "source_bytes": 153903,
+    "output_bytes": 151756,
+    "dimensions": [
+      960,
+      1280
+    ],
+    "exif_fields": 0
+  },
+  {
+    "source": "gallery\\image11.jpg",
+    "output": "assets\\images\\image11.jpg",
+    "source_bytes": 84031,
+    "output_bytes": 74781,
+    "dimensions": [
+      1080,
+      1080
+    ],
+    "exif_fields": 0
+  },
+  {
+    "source": "gallery\\image12.jpg",
+    "output": "assets\\images\\image12.jpg",
+    "source_bytes": 31760,
+    "output_bytes": 30766,
+    "dimensions": [
+      468,
+      1000
+    ],
+    "exif_fields": 0
+  },
+  {
+    "source": "gallery\\image13.jpg",
+    "output": "assets\\images\\image13.jpg",
+    "source_bytes": 101614,
+    "output_bytes": 99311,
+    "dimensions": [
+      960,
+      1280
+    ],
+    "exif_fields": 0
+  },
+  {
+    "source": "gallery\\image14.jpg",
+    "output": "assets\\images\\image14.jpg",
+    "source_bytes": 206734,
+    "output_bytes": 204131,
+    "dimensions": [
+      1280,
+      960
+    ],
+    "exif_fields": 0
+  },
+  {
+    "source": "images\\IMG_20250801_120648.jpg.jpeg",
+    "output": "assets\\images\\tshirt-orlando-pirates-front.jpg",
+    "source_bytes": 3508013,
+    "output_bytes": 168378,
+    "dimensions": [
+      720,
+      1600
+    ],
+    "exif_fields": 0
+  },
+  {
+    "source": "images\\IMG_20251017_154858_edit_9745907859040.jpg.jpeg",
+    "output": "assets\\images\\tee-proud-buccaneer-back.jpg",
+    "source_bytes": 1405428,
+    "output_bytes": 157854,
+    "dimensions": [
+      1171,
+      1600
+    ],
+    "exif_fields": 0
+  },
+  {
+    "source": "images\\IMG_20251017_154912_edit_9763115020179.jpg.jpeg",
+    "output": "assets\\images\\brand-wall-showroom.jpg",
+    "source_bytes": 1871730,
+    "output_bytes": 109698,
+    "dimensions": [
+      855,
+      1600
+    ],
+    "exif_fields": 0
+  },
+  {
+    "source": "images\\IMG_20260318_162144.jpg.jpeg",
+    "output": "assets\\images\\wall-banner-quantum.jpg",
+    "source_bytes": 5036174,
+    "output_bytes": 222177,
+    "dimensions": [
+      720,
+      1600
+    ],
+    "exif_fields": 0
+  },
+  {
+    "source": "images\\IMG_20260408_124114.jpg.jpeg",
+    "output": "assets\\images\\branded-gazebo-event.jpg",
+    "source_bytes": 4499209,
+    "output_bytes": 156720,
+    "dimensions": [
+      1600,
+      720
+    ],
+    "exif_fields": 0
+  },
+  {
+    "source": "images\\IMG_20260720_151231.jpg.jpeg",
+    "output": "assets\\images\\pullup-hollywood-signage.jpg",
+    "source_bytes": 3265471,
+    "output_bytes": 204195,
+    "dimensions": [
+      1200,
+      1600
+    ],
+    "exif_fields": 0
+  },
+  {
+    "source": "images\\IMG_20260723_103538.jpg.jpeg",
+    "output": "assets\\images\\branded-gazebo-fnb.jpg",
+    "source_bytes": 3289019,
+    "output_bytes": 198273,
+    "dimensions": [
+      1200,
+      1600
+    ],
+    "exif_fields": 0
+  },
+  {
+    "source": "images\\IMG_20260804_124057.jpg.jpeg",
+    "output": "assets\\images\\brand-wall-studio.jpg",
+    "source_bytes": 6020489,
+    "output_bytes": 332735,
+    "dimensions": [
+      1200,
+      1600
+    ],
+    "exif_fields": 0
+  },
+  {
+    "source": "images\\IMG_20260810_101435.jpg.jpeg",
+    "output": "assets\\images\\xframe-fighter-banner.jpg",
+    "source_bytes": 2975086,
+    "output_bytes": 203171,
+    "dimensions": [
+      1600,
+      1200
+    ],
+    "exif_fields": 0
+  },
+  {
+    "source": "images\\IMG_20260910_100500.jpg.jpeg",
+    "output": "assets\\images\\signage-wall-interior.jpg",
+    "source_bytes": 5088055,
+    "output_bytes": 326890,
+    "dimensions": [
+      1200,
+      1600
+    ],
+    "exif_fields": 0
+  },
+  {
+    "source": "images\\IMG_20260910_100521.jpg.jpeg",
+    "output": "assets\\images\\signage-installation.jpg",
+    "source_bytes": 5236692,
+    "output_bytes": 300211,
+    "dimensions": [
+      1200,
+      1600
+    ],
+    "exif_fields": 0
+  },
+  {
+    "source": "images\\Branding_040120.png",
+    "output": "assets\\images\\branding-mockup-flyer.jpg",
+    "source_bytes": 2195130,
+    "output_bytes": 216773,
+    "dimensions": [
+      1024,
+      1536
+    ],
+    "exif_fields": 0
+  },
+  {
+    "source": "images\\Vehicle_040039.png",
+    "output": "assets\\images\\vehicle-wrap-mockup.jpg",
+    "source_bytes": 2031034,
+    "output_bytes": 246898,
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "exif_fields": 0
+  },
+  {
+    "source": "images\\Tshirt printing_040152.png",
+    "output": "assets\\images\\apparel-tshirt-mockup.jpg",
+    "source_bytes": 1831733,
+    "output_bytes": 169276,
+    "dimensions": [
+      1149,
+      1369
+    ],
+    "exif_fields": 0
+  }
+]
