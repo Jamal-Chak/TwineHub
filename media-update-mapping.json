@@ -15,14 +15,14 @@
   },
   "after": {
     "images": 52,
-    "videos": 3,
-    "total": 55,
+    "videos": 2,
+    "total": 54,
     "by_category": {
       "banners": 10,
       "branding": 5,
       "printing": 8,
       "shop-branding-signage": 6,
-      "signage": 12,
+      "signage": 11,
       "vehicle": 14
     }
   },
@@ -924,7 +924,7 @@
     "The separate images/Shop Branding folder is empty. All six supplied shop photos are in images/Shop branding and Signage, so they use the combined shop-branding-signage category. The older signage and branding categories remain available.",
     "images/Banners/IMG_20250709_115440.jpg shows a day-care promotional display attached to a railing. Its flexible or rigid construction cannot be determined from the photograph; the owner Banners category is retained with neutral wording."
   ],
-  "preservation": "All 30 pre-update portfolio IDs, src references, video files and poster files are preserved byte-for-byte. Existing public images were not reoptimized. Original images and gallery sources, including historically excluded files, were not changed.",
+  "preservation": "All pre-update public image/video/poster files remain byte-for-byte preserved in the repository. The owner subsequently requested removal of Outdoor signage video (ID28) from public metadata and deployable output; its original and prepared media files remain preserved. Other existing entries retain their IDs and media references.",
   "deduplication": "SHA256 comparison of raw source bytes, covering existing media-audit.json sources, every new source file, and all41 other historical/source files in images/ and gallery/. Different views were preserved as separate items; no exact duplicate was found.",
   "optimization": {
     "max_edge": 1600,
@@ -941,10 +941,20 @@
     "new_images_progressive_rgb_jpeg": true,
     "new_images_exif_free": true,
     "new_images_aspect_ratios_preserved": "Within0.2% integer resizing tolerance against EXIF-oriented originals.",
-    "all_before_metadata_ids_and_sources_preserved": true,
+    "all_before_metadata_ids_and_sources_preserved": false,
     "all_before_public_image_video_poster_hashes_preserved": true,
     "all_source_file_hashes_preserved": true,
     "new_exact_duplicates_against_all_historical_sources": 0,
-    "browser_checks": "Reported separately by website verification workflow."
-  }
+    "browser_checks": "Reported separately by website verification workflow.",
+    "all_before_metadata_ids_and_sources_preserved_except_documented_removals": true
+  },
+  "intentional_removals": [
+    {
+      "entry_id": 28,
+      "src": "assets/videos/studio-tour.mp4",
+      "poster": "assets/posters/poster-studio-tour.jpg",
+      "title": "Outdoor signage video",
+      "reason": "Removed from the public portfolio at the owner's request."
+    }
+  ]
 }

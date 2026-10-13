@@ -297,18 +297,6 @@
     "height": 1369
   },
   {
-    "id": 28,
-    "src": "assets/videos/studio-tour.mp4",
-    "type": "video",
-    "poster": "assets/posters/poster-studio-tour.jpg",
-    "title": "Outdoor signage video",
-    "category": "signage",
-    "alt": "Outdoor signage video",
-    "description": "A supplied project video showing printed signage in place.",
-    "posterWidth": 540,
-    "posterHeight": 960
-  },
-  {
     "id": 29,
     "src": "assets/videos/project-install.mp4",
     "type": "video",

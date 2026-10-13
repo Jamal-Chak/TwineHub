@@ -7,10 +7,10 @@ The website now uses **11 Bunyan Street Benoni** in all five pages, contact deta
 | Portfolio | Before | After |
 | --- | ---: | ---: |
 | Images | 27 | 52 |
-| Videos | 3 | 3 |
-| Total entries | 30 | 55 |
+| Videos | 3 | 2 |
+| Total entries | 30 | 54 |
 
-All 30 previous IDs, media references and public image/video/poster bytes are preserved. All 25 newly supplied files were added; no exact duplicate was found against existing or previously excluded sources. Different angles remain separate entries. All 66 original files in images/ and gallery/ are unchanged.
+All previous public media bytes are preserved in the repository. At the owner's request, Outdoor signage video (ID28) is removed from public metadata and deployment; the other existing entries retain their IDs and media references. All 25 newly supplied files were added; no exact duplicate was found against existing or previously excluded sources. Different angles remain separate entries. All 66 original files in images/ and gallery/ are unchanged.
 
 | New owner folder | Images added | Public category |
 | --- | ---: | --- |
@@ -19,12 +19,12 @@ All 30 previous IDs, media references and public image/video/poster bytes are pr
 | TShirts | 2 | T-shirt printing |
 | Vehicle branding | 10 | Vehicle branding |
 
-The separate **Shop Branding** folder is empty and preserved. It is not merged with the populated shop branding/signage folder or used to infer projects. Older Branding & design and Signage categories remain available. The All filter contains all 55 entries.
+The separate **Shop Branding** folder is empty and preserved. It is not merged with the populated shop branding/signage folder or used to infer projects. Older Branding & design and Signage categories remain available. The All filter contains all 54 entries.
 
 | Current category | Images | Videos |
 | --- | ---: | ---: |
 | Branding & design | 5 | 0 |
-| Signage | 9 | 3 |
+| Signage | 9 | 2 |
 | Shop branding & signage | 6 | 0 |
 | T-shirt printing | 8 | 0 |
 | Vehicle branding | 14 | 0 |
@@ -48,9 +48,9 @@ Historically excluded gallery/image7.jpg remains preserved and excluded because 
 
 ## Build and verification
 
-The unchanged build_site.py produced exactly68 allowlisted files: five HTML pages, CSS, JavaScript, authoritative metadata, 52 portfolio images, three videos, three posters, logo and background. Original source folders, QA snapshots, mapping/report files and development utilities are outside dist. vercel.json is unchanged: framework null, python3 build_site.py, output dist; no Python app entrypoint was introduced.
+The unchanged build_site.py produced exactly66 allowlisted files: five HTML pages, CSS, JavaScript, authoritative metadata, 52 portfolio images, two videos, two posters, logo and background. Original source folders, QA snapshots, mapping/report files and development utilities are outside dist. vercel.json is unchanged: framework null, python3 build_site.py, output dist; no Python app entrypoint was introduced.
 
-Passed: isolated standard-library build; JavaScript syntax and diff whitespace checks; verify_site.py against localhost; exact output allowlist and source/output hashes; complete original and prior public-media preservation; all25 new mappings; optimized dimensions/orientation/aspect ratios/EXIF; all5 page contacts/social/address/directions; local references, metadata-consumer paths, matching gallery filter/category links, service thumbnail categories/captions/dimensions and stable homepage IDs; image/poster decoding; HTTP404 for private original/dev paths; all3 videos decoded fully, faststart verified, corresponding posters compared with mean pixel error0.0.
+Passed: isolated standard-library build; JavaScript syntax and diff whitespace checks; verify_site.py against localhost; exact output allowlist and source/output hashes; complete original and archived-media preservation, with the documented owner-requested video removal; all25 new mappings; optimized dimensions/orientation/aspect ratios/EXIF; all5 page contacts/social/address/directions; local references, metadata-consumer paths, matching gallery filter/category links, service thumbnail categories/captions/dimensions and stable homepage IDs; image/poster decoding; HTTP404 for private original/dev paths; the two published videos decoded fully, faststart verified, corresponding posters compared with mean pixel error0.0.
 
 **Unavailable:** browser tool inventory returned no browsers/apps. Mobile/tablet/desktop rendering, real click filtering, full-image viewer interaction, keyboard/focus, native browser playback, console errors, external enquiry handoff and external map result were not tested or marked passed. Static structure, code review and HTTP/media checks passed; they do not substitute for these browser checks.
 
@@ -93,3 +93,7 @@ Five HTML pages; script.js; style.css; assets/metadata.json; 25 new assets/image
 | images/Vehicle branding/IMG_20260708_193418.jpg | assets/images/vehicle-branding-img-20260708-193418.jpg | vehicle | Thandindlela coach side lettering | A side view of a white coach with blue Thandindlela Coaches lettering and star graphics. |
 | images/Vehicle branding/IMG_20260709_153849.jpg | assets/images/vehicle-branding-img-20260709-153849.jpg | vehicle | Coach branding in progress | A front view of a coach with a worker above the windscreen and blue coach lettering. |
 | images/Vehicle branding/IMG_20260710_151159.jpg | assets/images/vehicle-branding-img-20260710-151159.jpg | vehicle | SKT Towing pickup side graphics | A side view of a blue pickup with white SKT Towing and Recovery lettering. |
+
+## Owner-requested video removal
+
+Outdoor signage video (ID28) was removed from assets/metadata.json. Its prepared video assets/videos/studio-tour.mp4 and poster assets/posters/poster-studio-tour.jpg are no longer copied into dist. Original and prepared files remain preserved in the repository. Homepage video ID29 and video ID30 remain published. The mapping records this explicit exclusion and the verifier permits only documented exclusions while checking their archived file hashes.

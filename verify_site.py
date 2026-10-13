@@ -25,6 +25,14 @@ from build_site import PAGES
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / 'dist'
 ADDRESS = '11 Bunyan Street Benoni'
+# Only this removal was authorized by the owner; a manifest cannot silently
+# waive preservation of any other previously published project.
+AUTHORIZED_REMOVALS = {
+    28: {
+        'src': 'assets/videos/studio-tour.mp4',
+        'poster': 'assets/posters/poster-studio-tour.jpg',
+    },
+}
 SOCIAL_LINKS = {
     'https://www.facebook.com/share/1Ea1pMmF7w/',
     'https://www.instagram.com/tone4dmedia?igsh=cDgxM3NrYTZvNnBp',
@@ -137,18 +145,42 @@ def check_dist(metadata):
     print(f'PASS exact dist allowlist: {len(expected)} files; originals and development utilities excluded')
 
 
-def check_preservation(metadata):
+def check_preservation(metadata, mapping):
     snapshot = read_json(ROOT / 'qa/media-before.json')
     by_id = {item['id']: item for item in metadata}
+    removal_records = mapping.get('intentional_removals', [])
+    removed_ids = [item['entry_id'] for item in removal_records]
+    assert len(removed_ids) == len(set(removed_ids)), 'Duplicate intentional removal records'
+    removed_refs = set()
+    for removal in removal_records:
+        entry_id = removal['entry_id']
+        assert entry_id in AUTHORIZED_REMOVALS, ('Unapproved portfolio removal', entry_id)
+        assert removal.get('reason', '').strip(), ('Removal needs a documented reason', entry_id)
+        before = next(item for item in snapshot['entries'] if item['id'] == entry_id)
+        for field, expected in AUTHORIZED_REMOVALS[entry_id].items():
+            assert removal[field] == before[field] == expected, ('Wrong removal asset', entry_id, field)
+            removed_refs.add(expected)
+        assert removal['title'] == before['title'], ('Wrong removal title', entry_id)
+        assert entry_id not in by_id, ('Removed entry is still published', entry_id)
+    for item in metadata:
+        assert item['src'] not in removed_refs and item.get('poster') not in removed_refs, ('Removed media reused publicly', item)
+    for ref in removed_refs:
+        assert not (OUT / ref).exists(), ('Removed media still in dist', ref)
+        for name in PAGES + ['style.css', 'script.js', 'assets/metadata.json']:
+            assert ref not in (OUT / name).read_text(encoding='utf-8'), ('Removed media reference in public output', name, ref)
     for before in snapshot['entries']:
+        # Archived removals must remain byte-identical in the repository too.
+        assert digest(ROOT / before['src']) == before['src_sha256'], ('Published media altered', before['src'])
+        if before['type'] == 'video':
+            assert digest(ROOT / before['poster']) == before['poster_sha256'], before['poster']
+        if before['id'] in removed_ids:
+            continue
         assert before['id'] in by_id, ('Previously published entry removed', before['id'])
         current = by_id[before['id']]
         for field in ('src', 'type'):
             assert current[field] == before[field], ('Published source changed', before['id'], field)
-        assert digest(ROOT / before['src']) == before['src_sha256'], ('Published media altered', before['src'])
         if before['type'] == 'video':
             assert current['poster'] == before['poster']
-            assert digest(ROOT / before['poster']) == before['poster_sha256'], before['poster']
     originals_path = ROOT / 'qa/original-media-before.json'
     if originals_path.exists():
         originals = read_json(originals_path)
@@ -162,8 +194,11 @@ def check_preservation(metadata):
         print('UNVERIFIED full originals hashes: qa/original-media-before.json not present')
     for entry in snapshot.get('source_files', []):
         assert digest(ROOT / entry['source']) == entry['sha256'], ('Original changed', entry['source'])
-    print(f"PASS all previous portfolio entries unchanged: {snapshot['counts']['images']} images, {snapshot['counts']['videos']} videos")
-    return snapshot
+    retained = Counter(item['type'] for item in snapshot['entries'] if item['id'] not in removed_ids)
+    print(f"PASS prior public entries retained unchanged: {retained['image']} images, {retained['video']} videos")
+    if removal_records:
+        print(f'PASS {len(removal_records)} owner-requested removal(s): repository archives unchanged; public metadata/references/files excluded')
+    return snapshot, removed_refs
 
 
 def old_sources(public_asset):
@@ -174,8 +209,7 @@ def old_sources(public_asset):
             if entry['output'].replace('\\', '/') == public_asset]
 
 
-def check_new_inventory(metadata, snapshot):
-    mapping = read_json(ROOT / 'media-update-mapping.json')
+def check_new_inventory(metadata, snapshot, mapping):
     records = mapping['new_images']
     sources = [entry['source'].replace('\\', '/') for entry in records]
     assert len(sources) == len(set(sources)), 'Repeated source mapping'
@@ -230,12 +264,16 @@ def check_new_inventory(metadata, snapshot):
             error = sum(ImageStat.Stat(ImageChops.difference(optimized.convert('RGB'), expected)).mean) / 3
             assert error < 18, ('Unexpected content/orientation', record['source'], error)
     assert set(by_id) - old_ids == added_ids, 'New portfolio entries not fully accounted for'
+    counts = Counter(item['type'] for item in metadata)
+    actual_after = {'images': counts['image'], 'videos': counts['video'], 'total': len(metadata),
+                    'by_category': dict(sorted(Counter(item['category'] for item in metadata).items()))}
+    assert mapping['after'] == actual_after, ('Mapping final counts differ from public portfolio', mapping['after'], actual_after)
     print(f'PASS recursive supplied-file mapping: {len(records)} files; {dict(status_counts)}')
     print('PASS new optimization, aspect ratios, EXIF stripping and orientation/content comparison')
     return mapping
 
 
-def check_http(base, metadata, categories):
+def check_http(base, metadata, categories, removed_refs=()):
     def request(name):
         return urlopen(urljoin(base, quote(name, safe='/?=&:#%')), timeout=30)
     by_asset = {item['src']: item for item in metadata}
@@ -298,6 +336,7 @@ def check_http(base, metadata, categories):
                'media-update-mapping.json', 'qa/media-before.json', '.git/config']
     private.extend(path.relative_to(ROOT).as_posix() for path in (ROOT / 'images').rglob('*')
                    if path.is_file() and path.parent != ROOT / 'images')
+    private.extend(sorted(removed_refs))
     for name in private:
         try:
             with request(name):
@@ -307,6 +346,8 @@ def check_http(base, metadata, categories):
         else:
             raise AssertionError('Public source leak: ' + name)
     print('PASS current HTTP media references; original/mapping/development paths return 404')
+    if removed_refs:
+        print('PASS owner-removed public video/poster HTTP paths return 404')
 
 
 def check_images(metadata):
@@ -378,12 +419,13 @@ def main():
     args = parser.parse_args()
     assert OUT.is_dir(), 'Run python build_site.py first'
     metadata = read_json(ROOT / 'assets/metadata.json')
+    mapping = read_json(ROOT / 'media-update-mapping.json')
     categories = check_manifest(metadata)
     check_dist(metadata)
-    snapshot = check_preservation(metadata)
-    mapping = check_new_inventory(metadata, snapshot)
+    snapshot, removed_refs = check_preservation(metadata, mapping)
+    check_new_inventory(metadata, snapshot, mapping)
     check_consumers_and_deployment()
-    check_http(args.base.rstrip('/') + '/', metadata, categories)
+    check_http(args.base.rstrip('/') + '/', metadata, categories, removed_refs)
     check_images(metadata)
     check_videos(metadata)
     print('Portfolio counts:', dict(Counter(item['type'] for item in metadata)))
